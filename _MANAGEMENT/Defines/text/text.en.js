@@ -718,6 +718,9 @@ define(["../../Library/manage.validation"],
                            SUBMEDIA_ID: { type: "number" },
                            DN_KIND: { type: "number" },
                            DN_TYPE: { type: "number" },
+                           CENTER_ID:{type:"number", defaultValue :1},
+                           TENANT_ID:{type:"number", defaultValue :10},
+                           DNMAJOR_ID:{type:"number", defaultValue :100},
                            //OBSERVER_FLAG: { type: "number" }
                         }
                      }

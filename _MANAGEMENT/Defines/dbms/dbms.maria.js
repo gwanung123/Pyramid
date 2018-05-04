@@ -406,12 +406,12 @@ define([],
                          "user_id"    : { field: "%.nexus.userId", type: "string" },
                          "center_id"  : { field: "CENTER_ID", type: "number" },
                          "if" : {
-                            "center_id"  : { field: "CENTER_ID", type: "number" },                           
-                            "dn"      : { field: "LOGIN_ID", type: "string" }
+                            "center_id"  : { field: "CENTER_ID", type: "number" },
+                            "tenant_id"   : { field: "TENANT_ID", type: "number" },
+                            "dnmajor_id"   : { field: "DNMAJOR_ID", type: "number" },                           
+                            "dn"      : { field: "DN", type: "string" }
                          },
-                         "then": {
-                                "tenant_id"   : { field: "TENANT_ID", type: "number" },
-                                "dnmajor_id"   : { field: "DNMAJOR_ID", type: "number" },
+                         "then": {                                
                                 "dnsub_id"   : { field: "DNSUB_ID", type: "number" },
                                 "media_id"      : { field: "MEDIA_ID", type: "number" },
                                 "submedia_id"   : { field: "SUBMEDIA_ID", type: "number" },
