@@ -1,0 +1,52 @@
+/***************************************
+ * file : /Contents/containerSetting.html
+ * tree
+ **************************************/
+
+.nx-containerSetting {
+   height: 100%;
+}
+
+.nxContainerSettingCenter {
+   width: 100%;
+   border: 0px;
+   position: absolute;
+   top: 32px;
+   bottom: 0px;
+   height: 90.5%;
+}
+
+/**
+ * spreadsheet
+ */
+
+/******* button & dialog ********/
+#nx-setting-button {
+   width: 100px;
+   background-color: lightcoral;
+}
+
+.nx-setting-dialog .nx-ccc-title {
+   padding-left: 1.5em;
+   padding-right: 0.5em;
+   font-weight: 600;
+}
+
+.nx-setting-dialog .nx-ccc-input {
+   padding-top: 1em;
+   font-size: 12px;
+}
+
+.nx-setting-dialog .nx-separator {
+   height: 1px;
+   background-color: gainsboro;
+   margin-top: 15px;
+}
+
+.nx-setting-dialog .nx-ccc-input .nx-search-button {
+   width: 150px;
+   font-weight: 600;
+   float: right;
+   margin: 0 20px;
+}
+/******* toolbar ********/

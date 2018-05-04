@@ -1,0 +1,42 @@
+<div id="nx-header">
+    <nav class="navbar navbar-expand-md nx-contents-header-container">
+       <a class="navbar-brand nx-user-info" href="#">
+          <span data-bind="text:nxLoginTime"></span><br><span data-bind="text: nxUserID"></span>
+       </a>
+ 
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+ 
+       <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <!-- <div class="nx-login-state">
+                   <div class="report-icon-login"></div>
+                   <select class="custom-select nx-login-select report-icon-arrow-down">
+                      <option value="logon" data-bind="text: nxFieldHeaderLogin1"></option>
+                      <option value="logout" data-bind="text: nxFieldHeaderLogin2"></option>
+                   </select>
+                </div> -->
+             </li>
+          </ul>
+ 
+          <ul class="navbar-nav nx-user-stats">
+             <li class="nav-item">
+                <span data-bind="text: nxFieldHeaderStats1"></span>
+                <span class="nx-user-stats-number">5</span>
+             </li>
+             <!--li><span class="report-h-divider"></span></li-->
+             <li class="nav-item">
+                <span data-bind="text: nxFieldHeaderStats2"></span>
+                <span class="nx-user-stats-number">2</span>
+             </li>
+             <!--li><span class="report-h-divider"></span></li-->
+             <li class="nav-item">
+                <span data-bind="text: nxFieldHeaderStats3"></span>
+                <span class="nx-user-stats-number">7</span>
+             </li>
+          </ul>
+       </div>
+    </nav>
+ </div>

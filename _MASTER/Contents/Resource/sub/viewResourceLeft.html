@@ -1,0 +1,49 @@
+<div id="nx-contents-left">
+
+   <div id="nx-resource-tabstrip">
+      <ul class="nx-resource-tab">
+         <li class="nx-resource-tab-li k-state-active">MASTER</li>
+         <li class="nx-resource-tab-li">DEVICE</li>
+         <li class="nx-resource-tab-li">SCENARIO</li>
+      </ul>
+
+      <div class="nx-resource-tab-body">
+         <div id="nx-master-tabstrip">
+            <ul class="nx-master-tab nx-resource-tab">
+               <li class="nx-master-tab-li">TENANT</li>
+               <li class="nx-master-tab-li">GROUP</li>
+               <li class="nx-master-tab-li">TEAM</li>
+               <li class="nx-master-tab-li k-state-active">AGENT</li>
+            </ul>
+
+            <div id="nxTreeviewTenant" class="nx-master-tab-body"></div>
+            <div id="nxTreeviewGroup" class="nx-master-tab-body"></div>
+            <div id="nxTreeviewTeam" class="nx-master-tab-body"></div>
+            <div id="nxTreeviewAgent" class="nx-master-tab-body"></div>
+         </div>
+      </div>
+
+      <div class="nx-resource-tab-body">
+         <div id="nx-device-tabstrip">
+            <ul class="nx-device-tab nx-resource-tab">
+               <li class="nx-device-tab-li k-state-active">DN</li>
+               <li class="nx-device-tab-li">ROUTE</li>
+            </ul>
+
+            <div id="nxTreeviewDn" class="nx-device-tab-body"></div>
+            <div id="nxTreeviewRoute" class="nx-device-tab-body"></div>
+         </div>
+      </div>
+
+      <div class="nx-resource-tab-body">
+         <div id="nxTreeviewScenario" class="nx-device-tab-body"></div>
+      </div>
+   </div>
+
+</div>
+
+<script>
+   $("#nx-resource-tabstrip").kendoTabStrip();
+   $("#nx-master-tabstrip").kendoTabStrip({tabPosition: "bottom"});
+   $("#nx-device-tabstrip").kendoTabStrip({tabPosition: "bottom"});
+</script>

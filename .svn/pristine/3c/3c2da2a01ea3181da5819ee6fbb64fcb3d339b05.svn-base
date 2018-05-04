@@ -1,0 +1,33 @@
+<div id="nx-monitor-user-agent-list">
+   <h6 class="nxcss-user-agent-title">AGENT</h6>
+   <div id="nxUserAgentGrid2"></div>
+</div>
+
+<script>
+$("#nxUserAgentGrid2").kendoGrid({
+   columns: [
+      { field: "AGENT" },
+      { field: "IN" },
+      { field: "OUT" }
+   ],
+   height: 330,
+   dataSource: [
+      { AGENT: "Tea", IN: 0, OUT: 0 },
+      { AGENT: "Coffee", IN: 0, OUT: 0 },
+      { AGENT: "Ham", IN: 0, OUT: 0 },
+      { AGENT: "Bread", IN: 0, OUT: 0 },
+      { AGENT: "Tea", IN: 0, OUT: 0 },
+      { AGENT: "Coffee", IN: 0, OUT: 0 },
+      { AGENT: "Ham", IN: 0, OUT: 0 },
+      { AGENT: "Bread", IN: 0, OUT: 0 },
+      { AGENT: "Tea", IN: 0, OUT: 0 },
+      { AGENT: "Coffee", IN: 0, OUT: 0 },
+      { AGENT: "Ham", IN: 0, OUT: 0 },
+      { AGENT: "Bread", IN: 0, OUT: 0 },
+   ],
+   pageable: {
+      pageSize: 10,
+      info: false
+   },
+}).data("kendoGrid");
+</script>

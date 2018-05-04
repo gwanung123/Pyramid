@@ -1,0 +1,132 @@
+<!-- <div id="nx-contents-interactionmail-main"> -->
+<div id="nx-contents-main">
+    <section id="main">		
+        <div class="mail_ctn">
+
+			<div class="mail_mc mc_edit_mail">
+
+				<div class="container c1">
+					<div class="customer_info_box">
+					<h4>CONTACT INFORMATION</h4>
+						<ul>
+							<li>
+								<label for="name">Name</label>
+								<input  name="name" id="name"/>
+							</li>
+							<li>
+								<label for="mobile">Mobile</label>
+								<input  name="mobile" id="mobile"/>
+							</li>
+							<li>
+								<label for="gender">Gender</label>
+								<input  name="gender" id="gender"/>
+							</li>
+							<li>
+								<label for="email">Email</label>
+								<input  name="email" id="email"/>
+							</li>
+						</ul>
+						<button type="button" class="btn_accept" data-bind="click: mailAnswer" >ACCEPT</button>
+						<!-- <ul>
+							<li class="c_name"><img src="./../Styles/img/customer_circle.png"/>Customer Name</li>
+						</ul> -->
+					</div>
+				</div> 
+				<!--container end-->
+				
+				<div class="container c2">
+					<div class="customer_mail_box">
+					
+						<!-- <p>Title</p>
+						<span>Fri, 1/8/2018, 9:30AM</span> -->
+
+						<label for="title" id="mailtitle" ></label> 
+						<label for="rcvtime" id="recvtime" ></label>
+						
+						<!-- <span>+9</span>
+						<span>Attach Files</span> -->
+						
+						<div class="customer_mail_cnt" >
+							<!-- <p>Dear Jason Grigsby,</p>
+							<p>When you moved your MobileMe account to iCloud, we provided you with a complimentary storage upgrade beyond the standard 5GB that comes with an iCloud account to help you with the transition. Originally, this storge upgrade was set to expire on September 30, 2018.</p><br/> -->
+							<pre id="mailbody"></pre>
+						</div>
+						<div class="customer_mail_edit">
+							<ul class="mail_subject">
+								<li>
+									<label for="subject">Subject</label>
+									<input type="text" name="service" id="service"/>
+								</li>
+							</ul> <!--mail_subject end-->
+							
+							
+							<!-- <ul class="mail_type">
+								<li class="edit_title">Type</li>
+								<ul class="types">
+									<li>
+										<select id="type1" name="type1">
+											<option value="consul">CONSULTATION TYPE</option>
+											<option value="consul">TYPE A</option>
+											<option value="consul">TYPE B</option>
+											<option value="consul">TYPE C</option>
+										</select>
+									</li>
+									<li>
+										<select id="type2" name="type2">
+											<option value="consul">CONSULTATION TYPE</option>
+											<option value="consul">TYPE A</option>
+											<option value="consul">TYPE B</option>
+											<option value="consul">TYPE C</option>
+										</select>
+									</li>
+									<li>
+										<select id="type3" name="type3">
+											<option value="consul">CONSULTATION TYPE</option>
+											<option value="consul">TYPE A</option>
+											<option value="consul">TYPE B</option>
+											<option value="consul">TYPE C</option>
+										</select>
+									</li>
+								</ul>
+							</ul>  -->
+							<!--mail_type end-->
+							
+
+
+						
+						
+						
+						
+						</div> <!--customer_mail_edit end-->
+						<!-- <div class="kendo_edit">kendo edit place</div>  -->
+						<!--kendo ui edit-->
+
+						<div id="example">
+							<textarea id="editor" rows="10" cols="30" style="height:200px">
+							</textarea>
+							<script>
+								$(document).ready(function() {
+									// create Editor from textarea HTML element with default set of tools
+									$("#editor").kendoEditor({ resizable: {
+										content: false,
+										toolbar: false
+									}});
+								});
+							</script>
+
+						</div>
+
+						
+					</div> <!--customer_mail_box end-->
+				</div> <!--container end-->
+				<div class="submit_btn">
+					<!-- <button type="button" class="btn_preview">PREVIEW</button>
+					<input type="submit" class="sub_ready" value="SUBMIT / READY"/> -->
+					<input type="submit" class="sub_rest" data-bind="click: mailSubmit"  value="SUBMIT"/>
+				</div>
+			</div> <!--mc_list end-->
+
+        </div>
+    </section>
+   
+</div>

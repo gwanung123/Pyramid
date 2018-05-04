@@ -1,0 +1,48 @@
+<div id="nx-monitor-agent-stats" class="nxcss-agent-stats-font">
+   <h5 class="nxcss-agent-stats-title">AGENT STATS</h5>
+   <table class="nxcss-agent-stats-table">
+      <tbody data-template="agent-stats-template" data-bind="source: agentStats"></tbody>
+   </table>
+</div>
+
+<script id="agent-stats-template" type="text/x-kendo-template">
+   <tr class="nxcss-agent-stats-row">
+      <td class="nxcss-agent-stats-key" data-bind="text: key"></td>
+      <td class="nxcss-agent-stats-val" data-bind="text: val"></td>
+   </tr>
+</script>
+
+<style>
+.nxcss-agent-stats-font {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.nxcss-agent-stats-title {
+   color: #9a9a9a;
+   border-bottom-style: solid;
+   margin-bottom: 15px;
+}
+
+.nxcss-agent-stats-table {
+   width: 100%;
+}
+
+.nxcss-agent-stats-row {
+   border-bottom-style: ridge;
+   border-color: whitesmoke;
+   height: 30px;
+}
+
+.nxcss-agent-stats-key {
+   color: #666;
+   font-size: 14px;
+   width: 70%;
+}
+
+.nxcss-agent-stats-val {
+   color: #2e2e2e;
+   font-size: 14px;
+   font-weight: bold;
+   width: 30%;
+}
+</style>

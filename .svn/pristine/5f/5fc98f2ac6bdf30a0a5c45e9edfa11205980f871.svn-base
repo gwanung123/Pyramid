@@ -1,0 +1,133 @@
+<div id="nx-contents-interactionchat-main">
+    <section id="main">		
+        <div class="chat_ctn">
+
+            <div class="chat_mc mc_chat">
+                <div class="container" id ="content">
+					<!-- 20180418 anna -->
+					<div class="chat-box" id ="chat-box"> 
+					    <ul class="cb1">
+					        <li class ="me-normal"><span><img src="./../Styles/img/chat_dark_8.png"><span></span> agent </li>
+					        <li class ="me-normal time"> 00:00:00 </li>
+					
+					        <li class ="other-normal"><span><img src="./../Styles/img/chat_grey_8.png"><span></span> customer </li>
+					        <li class ="other-normal time"> 00:00:00 </li>
+					    </ul>
+					
+					    <ul class="cb2">
+					        <li class ="me-normal"><span><img src="./../Styles/img/chat_dark_8.png"><span></span> agent2 </li>
+					        <li class ="me-normal time"> 00:00:00 </li>
+					
+					        <li class ="other-normal"><span><img src="./../Styles/img/chat_grey_8.png"><span></span> customer2 </li>
+					        <li class ="other-normal time"> 00:00:00 </li>
+					    </ul>
+					</div>
+                 	<!-- 
+                    <ul class="chat-box"id ="chat-box"> 
+                    <!-- <ul class="cb1" id ="cb1">  -->
+
+
+                        <!-- <li class ="me-normal"><span><img src="./../Styles/img/chat_dark_8.png"><span>customer</li>
+                        <li class ="me-normal time"> 00:00</li>
+
+                        <li class ="other-normal"><span><img src="./../Styles/img/chat_grey_8.png"><span>agent</li>
+                        <li class ="other-normal time"> 00:00</li> -->
+                    
+                    </ul> 
+
+                    <!-- <ul class="cb2" id ="cb2">
+
+                         <li class ="me-normal"><span><img src="./../Styles/img/chat_dark_8.png"><span></span> hi </li>
+                        <li class ="me-normal time"> 00:00:00 </li>
+
+                        <li class ="other-normal"><span><img src="./../Styles/img/chat_grey_8.png"><span></span> SSE Customer </li>
+                        <li class ="other-normal time"> 00:00:00 </li> 
+
+                    </ul> -->
+                 -->
+                </div> <!--container end-->
+
+                
+                <div class="message">
+                    <img src="./../Styles/img/attach_33_btn.png"/>
+                    <input type="text" class="form_control" id="chat_txt" placeholder="type Your Message..." />
+                   
+                    <img src="./../Styles/img/send_33_btn.png"  id="sendMsg" onmouseover="mouseover(this)" onmouseout="mouseout(this)" />
+                </div>
+            </div> <!--mc_chat end-->
+            <div class="chat_edit">
+                <!-- <ul class="chat_menu">
+                    <button type="button"  >INITIALIZATION</button>
+                </ul> -->
+                <div class="chat_detail">
+                    <ul class="detail_type">
+                        <li class="edit_title">Type</li>
+                        <ul class="types">
+                            <li>
+                                <select id="type1" name="type1">
+                                    <option value="consul">CONSULTATION TYPE</option>
+                                    <!-- <option value="consul">TYPE A</option>
+                                    <option value="consul">TYPE B</option>
+                                    <option value="consul">TYPE C</option> -->
+                                    
+                                    <option value="Sales">Sales</option>
+                                    <option value="Service">Service</option>
+
+
+
+
+                                    
+                                </select>
+                            </li>
+                            <li style="margin-left:1%; margin-right:1%;">
+                                <select id="type2" name="type2">
+                                    <option value="consul">CONSULTATION TYPE</option>
+                                    <!-- <option value="consul">TYPE A</option>
+                                    <option value="consul">TYPE B</option>
+                                    <option value="consul">TYPE C</option> -->
+
+                                    <option value="Project">Project</option>
+                                    <option value="PO">PO</option>
+                                    <option value="Delivery">Delivery</option>
+
+                                </select>
+                            </li>
+                            <li>
+                                <select id="type3" name="type3">
+                                    <option value="consul">CONSULTATION TYPE</option>
+                                    <!-- <option value="consul">TYPE A</option>
+                                    <option value="consul">TYPE B</option>
+                                    <option value="consul">TYPE C</option> -->
+
+                                    <option value="Price">Price</option>
+                                    <option value="Deadline">Deadline</option>
+                                    <option value="Stock">Stock</option>
+
+                                </select>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="detail_result">
+                        <li class="edit_title">Result</li>
+                        <li>
+                            <input type="checkbox"/>
+                            <label for="re_contact">RE-CONTACT</label>
+                        </li>
+                    </ul>
+                    <ul class="detail_contents">
+                        <li class="edit_title">Content</li>
+                        <textarea class="memo" id ="content"></textarea>
+                    </ul>
+                </div>
+
+                <div class="save_btn">
+                    <button type="button" id ="saveNotReady" class="btn_rest" data-bind="click: saveNotReady" >SAVE / REST</button>
+                    <button type="button" id ="saveReady" class="btn_ready" data-bind="click: chatsaveReady">SAVE / READY</button>
+                </div>
+            </div>
+  
+
+        </div>
+    </section>
+
+</div>

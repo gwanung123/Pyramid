@@ -1,0 +1,20 @@
+<div id="nx-monitor-user-agentStats">
+   <!-- title -->
+   <div class="title">
+      <!--img src="img/setting.png" class="setting"/-->
+      <p>AGENT STATISTICS</p>
+      <!--img src="img/close.png" class="close"/-->
+   </div>
+
+   <!-- detail -->
+   <div class="detail">
+      <ul class="detail_cnt" data-template="user-agentStats-template" data-bind="source: agentStats"></ul>
+   </div>
+</div>
+
+<script id="user-agentStats-template" type="text/x-kendo-template">
+   <li class="detail_list">
+      <p class="detail_list_key" data-bind="text: key"></p>
+      <span class="detail_list_val" data-bind="text: val"></span>
+   </li>
+</script>

@@ -1,0 +1,239 @@
+/***************************************
+ * file : /Contents/containerAssign.html
+ * tree
+ **************************************/
+
+.nx-containerAssign {
+   height: 100%;
+}
+
+/**
+ * left tree
+ */
+
+.nx-containerAssign-title {
+   color: #fff;
+   padding: 5px 15px;
+   margin-bottom: 0px;
+   font-weight: 600;
+   border-top-color: #fff;
+   border-top-style: double;
+   border-top-width: 3px;
+   border-bottom-color: #fff;
+   border-bottom-style: double;
+   border-bottom-width: 3px;
+   text-align: center;
+   background-color: #5a5d63;
+}
+
+.nx-containerAssign-left {
+   /* overflow: hidden !important; */
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+}
+
+.nxContainerAssignLeft {
+   padding: .92em;
+   height: 93%;
+}
+
+
+/**
+ * top grid
+ */
+
+.nxContainerAssignTop {
+}
+
+
+/******* toolbar ********/
+.nxContainerAssignTop .k-grid-toolbar {
+   padding: .6em 1.3em .6em .4em;
+}
+
+.nxContainerAssignTop .nx-ccc-title {
+   padding-left: 1.5em;
+   padding-right: 0.5em;
+   font-weight: 600;
+   margin-bottom: 0px;
+   padding-top: 5px;
+}
+
+.nxContainerAssignTop .nx-ccc-input {
+   display: inline-block;
+   padding-bottom: 0px;
+}
+
+.nxContainerAssignTop .nx-ccc-input .nx-search-button {
+   width: 150px;
+   font-weight: 600;
+   float: right;
+   margin: 0 20px;
+}
+/******* toolbar ********/
+
+.nxContainerAssignTop .k-grouping-header {
+   background-color: indianred;
+}
+
+.nxContainerAssignTop .k-header {
+   background-color: #fff;
+   background-image: none;
+}
+
+.nxContainerAssignTop .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+.nxContainerAssignTop .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+.nxContainerAssignTop .k-grid-content-locked {
+   border-color: #aaa;
+   border-right-width: 2px;
+}
+
+.nxContainerAssignTop .k-grid-content {
+}
+
+.nxContainerAssignTop a.k-link:link {
+   color: #fff;
+}
+
+.nxContainerAssignTop tbody .k-state-selected {
+   background-color: #fff;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerAssignTop tr:hover {
+   background-color: #fff;
+}
+
+.nxContainerAssignTop td.k-state-selected:hover, .nxContainerAssignTop tr.k-state-selected:hover {
+   background-color: #fff;
+}
+
+
+/**
+ * bottom grid
+ */
+
+.nxContainerAssignBottom {
+   position: absolute;
+   top: 168px;
+   bottom: 0px;
+   left: 255px;
+   right: 0px;
+}
+
+
+/******* toolbar ********/
+.nxContainerAssignBottom .k-grid-toolbar {
+   padding: .6em 1.3em .6em .4em;
+}
+
+.nxContainerAssignBottom .nx-ccc-title {
+   padding-left: 1.5em;
+   padding-right: 0.5em;
+   font-weight: 600;
+   margin-bottom: 0px;
+   padding-top: 5px;
+}
+
+.nxContainerAssignBottom .nx-ccc-input {
+   display: inline-block;
+   padding-bottom: 0px;
+}
+
+.nxContainerAssignBottom .nx-ccc-input .nx-set-button {
+   width: 100px;
+   font-weight: 600;
+   float: right;
+}
+
+.nxContainerAssignBottom .nx-ccc-info {
+   float: right;
+}
+
+.nxContainerAssignBottom .nx-ccc-info .nx-assign-button,
+.nxContainerAssignBottom .nx-ccc-info .nx-retrieval-button {
+   width: 100px;
+   font-weight: 600;
+   float: right;
+}
+
+.nxContainerAssignBottom .nx-ccc-info .nx-retrieval-button {
+   margin-left: 20px;
+}
+/******* toolbar ********/
+
+.nxContainerAssignBottom .k-grouping-header {
+   background-color: indianred;
+}
+
+.nxContainerAssignBottom .k-header {
+   background-color: #fff;
+   background-image: none;
+}
+
+.nxContainerAssignBottom .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+.nxContainerAssignBottom .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+.nxContainerAssignBottom .k-grid-content-locked {
+   border-color: #aaa;
+   border-right-width: 2px;
+}
+
+.nxContainerAssignBottom .k-grid-content {
+}
+
+.nxContainerAssignBottom .k-pager-wrap {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   width: 100%;
+   height: 25px;
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+   top: 89.5%;
+}
+
+.nxContainerAssignBottom a.k-link:link {
+   color: #fff;
+}
+
+.nxContainerAssignBottom tbody .k-button {
+   min-width: 20px !important;
+   padding-left: 10px;
+   padding-right: 0px;
+}
+
+.nxContainerAssignBottom tbody .k-state-selected {
+   background-color: #fff;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerAssignBottom tr:hover {
+   background-color: #fff;
+}
+
+.nxContainerAssignBottom td.k-state-selected:hover, .nxContainerAssignBottom tr.k-state-selected:hover {
+   background-color: #fff;
+}

@@ -1,0 +1,100 @@
+<div id="nx-monitor-user-queue">
+   <h6 class="nxcss-user-queue-title">QUEUE</h6>
+   <table class="nx-user-queue-table">
+      <tbody>
+         <tr class="nx-user-queue-top">
+            <td colspan="4" class="nx-user-queue-top-col">
+               <div id="nxUserQueueChart"></div>
+            </td>
+         </tr>
+         <tr class="nx-user-queue-bottom">
+            <td class="nx-user-queue-bottom-col">
+               <h6 class="nx-user-queue-bottom-title">WAIT</h6>
+               <h5 class="nx-user-queue-bottom-value" style="color:#ff6800">10</h5>
+            </td>
+            <td class="nx-user-queue-bottom-col">
+               <h6 class="nx-user-queue-bottom-title">ENTER</h6>
+               <h5 class="nx-user-queue-bottom-value" style="color:#a0a700">50</h5>
+            </td>
+            <td class="nx-user-queue-bottom-col">
+               <h6 class="nx-user-queue-bottom-title">FAIL</h6>
+               <h5 class="nx-user-queue-bottom-value" style="color:#ff8d00">10</h5>
+            </td>
+            <td class="nx-user-queue-bottom-col">
+               <h6 class="nx-user-queue-bottom-title">NONE</h6>
+               <h5 class="nx-user-queue-bottom-value" style="color:#678900">40</h5>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+<script>
+$("#nxUserQueueChart").kendoChart({
+   title: {
+      text: "What is you favourite sport?"
+   },
+   legend: {
+      position: "top"
+   },
+   seriesDefaults: {
+      labels: {
+         template: "#= category # - #= kendo.format('{0:P}', percentage)#",
+         position: "outsideEnd",
+         visible: true,
+         background: "transparent"
+      }
+   },
+   series: [{
+      type: "donut",
+      overlay: {
+          gradient: "none"
+      },
+      data: [{
+         category: "Distribute",
+         value: 50,
+         color: "#7692e2"
+      }, {
+         category: "Abandon",
+         value: 10,
+         color: "#3e4098"
+      }, {
+         category: "Nonservice",
+         value: 40,
+         color: "#ffbb44"
+      }]
+    }],
+   tooltip: {
+      visible: true,
+      template: "#= category # - #= kendo.format('{0:P}', percentage) #"
+   }
+}).data("kendoChart");
+</script>
+<!-- 
+<style>
+#nxUserQueueChart {
+   margin-bottom: 20px;
+   padding-left: 15px;
+   width: 250px;
+   height: 250px;
+}
+
+.nx-user-queue-table {
+   margin-left: 10px;
+}
+
+.nx-user-queue-top {
+   border-bottom: 1px solid;
+}
+
+.nx-user-queue-bottom {
+   
+}
+
+.nx-user-queue-bottom-col {
+   width: 69px;
+   text-align: center;
+   padding-top: 15px;
+}
+
+</style> -->

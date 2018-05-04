@@ -1,0 +1,182 @@
+<div id="nx-contents-interaction-main">
+    <section id="main">		
+        <div class="call_ctn">
+    
+    <div class="call_mc mc_info">
+        <div class="container">
+        <h4>CONTACT INFORMATION</h4>
+            <p class="customer_img">
+				<!-- 20180418 anna -->
+                <!-- <img src="./../Styles/img/customer_circle.png"> -->
+                <!-- <span>Christina Aguilera</span> -->
+                <!-- <input type="text" name="name" id="c_name"/> -->
+
+                <!-- <label for="service" id="c_name" ></label> -->
+                <input name="c_name" id="c_name"/>
+				<span class="help_requested">anna asked you for help<button type="button" class="help_me_yes">YES</button></span>
+                <span class="help_please">you asked eric for help</span>
+                <button type="button" class="help">HELP</button>
+            </p>
+            <div class="customer_info">
+                <ul class="customer_menu">
+                    <!-- <li>NEW</li> -->
+                    <!-- <li>EDIT</li>
+                    <li>INITIALIZATION</li>
+                    <li>INQUIRY</li> -->
+
+                    <button type="button"  data-bind="click: customerFieldInital" >INITIALIZATION</button>
+                    <button type="button" >EDIT</button>
+
+                </ul>
+
+                <ul class="customer_detail">	
+                     <!-- 20180412 jesse -->
+                    <!-- <li>
+                        <label for="service">Service</label>
+                        <input  name="service" id="service"/>
+                    </li> -->
+                    <li style="width:100%">
+                        <!-- <label for="c_id">Customer ID</label>
+                        <input type="text" name="c_id" id="c_id"/> -->
+
+                        <label for="c_id">Customer ID</label>
+                        <input name="c_id" id="c_id" style="width:82%"/>
+                    </li>
+                    <!-- <li style="width:100%">
+                        <label for="co_reg">Co.reg.</label>
+                        <input type="text" name="co_reg" id="co_reg" style="width:86%"/>
+                    </li> -->
+                    <li style="width:100%">
+                        <label for="address">Address</label>
+                        <input  name="address" id="address" style="width:82%"/>
+                    </li>
+                    <li>
+                        <label for="p_num">P.Number</label>
+                        <input  name="p_num" id="p_num"/>
+                    </li>
+                    <li>
+                        <label for="c_num">C.Number</label>
+                        <input  name="c_num" id="c_num"/>
+                    </li>
+                    <li>
+                        <label for="fax">FAX</label>
+                        <input  name="fax" id="fax"/>
+                    </li>
+                    <li>
+                        <label for="email">E-mail</label>
+                        <input  name="email" id="email"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="customer_edit">
+                <ul class="customer_menu2">
+                    <!-- <li>EDIT</li>
+                    <li>INITIALIZATION</li> -->
+
+                    <button type="button"  >INITIALIZATION</button>
+                
+                </ul>
+                <div class="customer_detail2">
+                    <ul class="detail2_type">
+                        <li class="edit_title">Type</li>
+                        <ul class="types">
+                            <li>
+                                <select id="type1" name="type1">
+                                    <option value="consul">CONSULTATION TYPE</option>
+                                    <!-- <option value="consul">TYPE A</option>
+                                    <option value="consul">TYPE B</option>
+                                    <option value="consul">TYPE C</option> -->
+
+                                    <option value="Sales">Sales</option>
+                                    <option value="Service">Service</option>
+                                    <!-- <option value="consul">TYPE C</option> -->
+                                </select>
+                            </li>
+                            <li>
+                                <select id="type2" name="type2">
+                                    <option value="consul">CONSULTATION TYPE</option>
+                                    <!-- <option value="consul">TYPE A</option>
+                                    <option value="consul">TYPE B</option>
+                                    <option value="consul">TYPE C</option> -->
+
+                                    <option value="Project">Project</option>
+                                    <option value="PO">PO</option>
+                                    <option value="Delivery">Delivery</option>
+
+                                  
+                                </select>
+                            </li>
+                            <li>
+                                <select id="type3" name="type3">
+                                    <option value="consul">CONSULTATION TYPE</option>
+                                    <!-- <option value="consul">TYPE A</option>
+                                    <option value="consul">TYPE B</option>
+                                    <option value="consul">TYPE C</option> -->
+
+                                    <option value="Price">Price</option>
+                                    <option value="Deadline">Deadline</option>
+                                    <option value="Stock">Stock</option>
+
+
+                                </select>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="detail2_result">
+                        <li class="edit_title">Result</li>
+                        <!-- <li>COMPLETION</li>
+                        <li>UNANSWERED</li> -->
+                        <li>RE-CONTACT</li>
+
+                        <!-- <ul class="priorty">
+                            <li>Priorty</li>
+                            <li>
+                                <select id="priorty" name="priorty">
+                                    <option value="priorty">1</option>
+                                    <option value="priorty">2</option>
+                                    <option value="priorty">3</option>
+                                </select>
+                            </li>
+                        </ul> -->
+
+
+
+                    </ul>
+                    <ul class="detail2_contents">
+                        <li class="edit_title">Content</li>
+                        <textarea class="memo" id ="content"></textarea>
+                    </ul>
+                </div>
+            </div>
+        </div> <!--container end-->
+        <div class="save_btn">
+            <button type="button" class="btn_rest" data-bind="click: saveNotReady" >SAVE / REST</button>
+            <button type="button" class="btn_ready" data-bind="click: saveReady">SAVE / READY</button>
+        </div>
+    </div> <!--mc_info end-->
+</div>
+</section>
+
+
+   
+</div>
+
+<script type="text/javascript">
+    //help click event
+    $(function(){
+        //help버튼 클릭후 yes를 누르면 메시지 사라짐 (도움요청을 받은 사람 화면)
+        $(".help_requested, .help_please").hide();
+        $(".help").click(function(){
+            $(".help_requested").fadeIn();
+
+            $(".help_me_yes").click(function(){
+                $(".help_requested").fadeOut();
+            });
+        });
+        
+        //help버튼 오른쪽클릭후 2초 뒤에 사라짐 (도움요청을 한 사람 화면)
+        $(".help").contextmenu(function(){
+            $(".help_please").fadeIn(500).delay(2000).fadeOut(1000);
+        });
+    });
+</script> 

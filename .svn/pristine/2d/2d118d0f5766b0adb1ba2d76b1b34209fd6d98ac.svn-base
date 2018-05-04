@@ -1,0 +1,45 @@
+<ul id="nx-sidebar" class="nav nav-list">
+   <li><a class="nx-btn-side-offset1" href="../../Views/intro.html" data-bind="text: nxTXTSidebarButton1"></a></li>
+   <li class="nx-sidebar-resource"><a class="nx-btn-side-offset2" href="#" data-bind="text: nxTXTSidebarButton2, click: nxDoSidebarButton2"></a></li>
+   <li><a class="nx-btn-side-offset3" href="#" data-bind="text: nxTXTSidebarButton3, click: nxDoSidebarButton3"></a></li>
+   <li><a class="nx-btn-side-offset4" href="#" data-bind="text: nxTXTSidebarButton4, click: nxDoSidebarButton4"></a></li>
+   <li>
+      <ul id="nx-sidebar-menu5">
+         <li>
+            <a class="nx-btn-side-offset5" href="#" data-bind="text: nxTXTSidebarButton5"></a>
+            <ul>
+               <li class="nx-sidebar-submenu">GROUP</li>
+               <li class="nx-sidebar-submenu">TEAM</li>
+               <li class="nx-sidebar-submenu">AGENT</li>
+               <li class="nx-sidebar-submenu">SUBAGENT</li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li>
+      <ul id="nx-sidebar-menu6">
+         <li>
+            <a class="nx-btn-side-offset6" href="#" data-bind="text: nxTXTSidebarButton6"></a>
+            <ul>
+               <li class="nx-sidebar-submenu">MAJOR</li>
+               <li class="nx-sidebar-submenu">SUB</li>
+               <li class="nx-sidebar-submenu">DN</li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a class="nx-btn-side-offset7" href="#" data-bind="text: nxTXTSidebarButton7, click: nxDoSidebarButton7"></a></li>
+   <li><a class="nx-btn-side-offset8" href="#" data-bind="text: nxTXTSidebarButton8, click: nxDoSidebarButton8"></a></li>
+   <li>
+      <ul id="nx-sidebar-menu9">
+         <li>
+            <a class="nx-btn-side-offset9" href="#" data-bind="text: nxTXTSidebarButton9"></a>
+            <ul>
+               <li class="nx-sidebar-submenu">SKILL</li>
+               <li class="nx-sidebar-submenu">ASSIGN</li>
+            </ul>
+         </li>
+      </ul>
+   </li>
+   <li><a class="nx-btn-side-offset10" href="#" data-bind="text: nxTXTSidebarButton10, click: nxDoSidebarButton10"></a></li>
+</ul>

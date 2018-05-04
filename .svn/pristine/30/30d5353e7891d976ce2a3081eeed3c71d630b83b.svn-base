@@ -1,0 +1,131 @@
+<div id="nx-header">
+
+    <!--main-->
+    <div id="contents">
+        <section id="logon">
+                <div class="logon_info">
+                <h3 class="hidden">로그온상태</h3>
+                    <div class="logon_state1">
+                        <!-- <p class="log_no">[<span>15222</span>]</p>
+                        <p class="log_time" data-bind="text:nxLoginTime" ></p>
+                        <p class="log_name" data-bind="text: nxUserID" ></p> -->
+                        
+                        <a class="navbar-brand nx-user-info" href="#">
+                                <span data-bind="text:nxLoginTime"></span><br><span data-bind="text: nxUserID"></span>
+                             </a>
+
+                    </div> <!--logon_state1 end-->
+                    <div class="log_com logon_state2">
+                        <p>Call</p>
+                        <div class="log_light"></div>
+                        <select id="select_login_call" name="select_login_call">
+                                <option value="logout" data-bind="text: nxFieldHeaderLogin5"></option>
+                                <option value="logon" data-bind="text: nxFieldHeaderLogin1"></option>
+                                <!-- <option value="ready" data-bind="text: nxFieldHeaderLogin2"></option>
+                                <option value="notready" data-bind="text: nxFieldHeaderLogin3"></option>
+                                <option value="acw" data-bind="text: nxFieldHeaderLogin4"></option> -->
+                        </select>
+                    </div> <!--logon_state2 end-->
+                    <div class="log_com logon_state3">
+                        <p>Chat</p>
+                        <div class="log_light"></div>
+                        <select id="select_login_chat" name="select_login_chat">
+                                <option value="clogout" data-bind="text: nxFieldHeaderLogin5"></option>
+                                <option value="clogon" data-bind="text: nxFieldHeaderLogin1"></option>
+                                <!-- <option value="cready" data-bind="text: nxFieldHeaderLogin2"></option>
+                                <option value="cnotready" data-bind="text: nxFieldHeaderLogin3"></option>
+                                <option value="cacw" data-bind="text: nxFieldHeaderLogin4"></option> -->
+                        </select>
+
+                        <!-- <ul>
+                            <li class="log_call bar_title">CALL<span class="log_state_bar"><span></span></span></li>
+                            <li class="log_mail bar_title">MAIL<span class="log_state_bar"><span></span></span></li>
+                            <li class="log_chat bar_title">CHAT<span class="log_state_bar"><span></span></span></li>
+                        </ul> -->
+
+                    </div> <!--logon_state3 end-->
+
+                    <div class="log_com logon_state4">
+                        <p>Mail</p>
+                        <div class="log_light"></div>
+                        <select id="select_login_mail" name="select_login_mail">
+                                <option value="mlogout" data-bind="text: nxFieldHeaderLogin5"></option>
+                                <option value="mlogon" data-bind="text: nxFieldHeaderLogin1"></option>
+                                <!-- <option value="mready" data-bind="text: nxFieldHeaderLogin2"></option>
+                                <option value="mnotready" data-bind="text: nxFieldHeaderLogin3"></option>
+                                <option value="macw" data-bind="text: nxFieldHeaderLogin4"></option> -->
+                        </select>
+
+
+                    </div> <!--logon_state4 end-->
+
+
+
+
+
+                    <!-- <div class="logon_state4">
+                        <ul>
+                            <li class="total_calls">TOTAL CALLS (<span>000</span>)</li>
+                            <li class="call_duration">CALL DURATION (<span>00:00:00</span>)</li>
+                            <li class="outbound">OUTBOUND (<span>0</span>)</li>
+                            <li class="inbound">INBOUND (<span>0</span>)</li>
+                        </ul>
+                    </div>  -->
+                    <!--logon_state4 end-->
+                </div> <!--logon_info end-->
+            </section>
+    </div>
+
+
+
+
+    <!-- <nav class="navbar navbar-expand-md nx-contents-header-container">
+       <a class="navbar-brand nx-user-info" href="#">
+          <span data-bind="text:nxLoginTime"></span><br><span data-bind="text: nxUserID"></span>
+       </a>
+ 
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarText" style="width:300px">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+                <div class="nx-login-state">
+                   <div class="report-icon-login"></div>
+                   <select class="custom-select nx-login-select report-icon-arrow-down" id="select_login">
+                      <option value="logout" data-bind="text: nxFieldHeaderLogin5"></option>
+                      <option value="logon" data-bind="text: nxFieldHeaderLogin1"></option>
+                      <option value="ready" data-bind="text: nxFieldHeaderLogin2"></option>
+                      <option value="notready" data-bind="text: nxFieldHeaderLogin3"></option>
+                      <option value="acw" data-bind="text: nxFieldHeaderLogin4"></option>
+                      
+                   </select>
+                
+                </div>
+             </li>
+          </ul>
+          
+       </div>
+
+       <div class="navbar-bar">
+            <ul>
+                <li class="log_chat bar_title">CHAT</li>
+                <li class="log_state_bar"><span></span></li>
+                <li class="log_mail bar_title">MAIL</li>
+                <li class="log_state_bar"><span></span></li>
+            </ul>
+        </div>
+
+    </nav> -->
+
+
+
+
+
+
+
+
+
+
+ </div>

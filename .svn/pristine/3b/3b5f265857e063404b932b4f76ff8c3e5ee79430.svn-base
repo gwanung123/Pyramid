@@ -1,0 +1,164 @@
+/***************************************
+ * file : /Contents/resource.html
+ * tree
+ **************************************/
+#nx-contents-resource {
+   height: 100%;
+   width: 100%;
+}
+
+.nx-contents-resource-left {
+   height: 100%;
+}
+
+#nx-resource-tabstrip {
+   font-size: 12px;
+   position: absolute;
+   bottom: 0px;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: #fff;
+   border: 0px;
+}
+
+/* 20180423 Anna */
+.nx-resource-tab {
+    /* margin: 0px !important; */
+    width: 97%;
+    margin-left: 2%;
+    margin-top: 5px;
+    font-weight: 600;
+}
+/* end */
+
+.nx-resource-tab > .k-state-default {
+   background-color: #c5c5c5 !important;
+   background-image: none !important;
+   border-radius:0px;
+}
+
+.nx-resource-tab > .k-state-hover {
+   background-color: #5a5d63 !important;
+   background-image: none !important;
+}
+
+.nx-resource-tab > .k-state-active {
+   background-color: #5a5d63 !important;
+   background-image: none !important;
+}
+
+.nx-resource-tab-body {
+   margin: 0px !important;
+   /* height: 88% !important; */
+   border: 0px !important;
+}
+
+.nx-resource-tab-body > .k-tabstrip-wrapper {
+   height: 100%;
+}
+
+.nx-resource-tab-li {
+   width: 33%;
+   border: 0px !important;
+}
+
+.nx-resource-tab-li span.k-loading {
+   border: 0px;
+}
+
+.nx-resource-tab-li span.k-link {
+   color: #fff !important;
+}
+
+/**
+ * master
+ */
+#nx-master-tabstrip {
+   position: absolute;
+   bottom: 0px;
+   top: 31px;
+   left: 0px;
+   right: 0px;
+   background-color: #fff;
+   border: 0px;
+}
+
+.nx-master-tab-body {
+   margin: 0px !important;
+   /* height: 88% !important; */
+   border: 0px !important;
+}
+
+/* 20180423 Anna */
+.nx-resource-tab-body .nx-master-tab {
+    width: 95%;
+    position: absolute;
+    left: 2.5%;
+    bottom: 62px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.nx-master-tab li.nx-master-tab-li{
+    width:25%;
+    float: left;
+}
+/* end */
+
+.nx-master-tab-li {
+   width: 25%;
+   border: 0px !important;
+}
+
+.nx-master-tab-li span.k-loading {
+   border: 0px;
+}
+
+.nx-master-tab-li span.k-link {
+   color: #fff !important;
+}
+
+
+/**
+ * device
+ */
+#nx-device-tabstrip {
+   position: absolute;
+   bottom: 0px;
+   top: 31px;
+   left: 0px;
+   right: 0px;
+   background-color: #fff;
+   border: 0px;
+}
+
+.nx-device-tab-body {
+   margin: 0px !important;
+   /* height: 88% !important; */
+   border: 0px !important;
+}
+
+/* 20180423 Anna */
+.nx-device-tab{
+    width: 95%;
+    position: absolute;
+    left: 2.5%;
+    bottom: 62px;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+/* end */
+
+.nx-device-tab-li {
+   width: 50%;
+   border: 0px !important;
+}
+
+.nx-device-tab-li span.k-loading {
+   border: 0px;
+}
+
+.nx-device-tab-li span.k-link {
+   color: #fff !important;
+}

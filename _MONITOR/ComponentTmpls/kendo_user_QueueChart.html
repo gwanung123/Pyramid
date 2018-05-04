@@ -1,0 +1,21 @@
+<div id="nx-monitor-user-queue">
+   <h6 class="title">QUEUE</h6>
+   <table class="nx-user-queue-table">
+      <tbody>
+         <tr class="nx-user-queue-top">
+            <td colspan="3" class="nx-user-queue-top-col">
+               <div id="nxUserQueueChart"></div>
+            </td>
+         </tr>
+         <tr class="nx-user-queue-bottom" data-template="user-queue-template" data-bind="source: queueChart">
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+<script id="user-queue-template" type="text/x-kendo-template">
+   <td class="nx-user-queue-bottom-col">
+      <h6 class="nx-user-queue-bottom-title" data-bind="text: key"></h6>
+      <h5 class="nx-user-queue-bottom-value" data-bind="text: val"></h5>
+   </td>
+</script>

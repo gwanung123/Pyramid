@@ -1,0 +1,89 @@
+<div id="nx-monitor-agent-state">
+   <div id="nx-monitor-agent-state-listview" class="nxcss-agent-state-listview"></div>
+   <div id="nx-monitor-agent-state-pager" class="nxcss-agent-state-pager"></div>
+</div>
+
+<script type="text/x-kendo-tmpl" id="agent-state-template">
+   <div class="nxcss-agent-state k-widget">
+      <dl>
+         <dt>ID</dt>
+         <dd>#:AgentID#</dd>
+         <dt>STATE</dt>
+         <dd>#:AgentState#</dd>
+         <dt>LOGIN ID</dt>
+         <dd>#:LoginID#</dd>         
+      </dl>
+   </div>
+</script>
+
+<style>
+#nx-monitor-agent-state .k-listview
+{
+   border: 0px;
+}
+
+.nxcss-agent-state-pager
+{
+   border-top: 0;
+   position: absolute;
+   top: 435px;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   font-size: 12px;
+   height: 25px;
+}
+
+.nxcss-agent-state-pager a.k-link:link {
+   color: #fff;
+}
+
+.nxcss-agent-state
+{
+   float: left;
+   width: 10%;
+   box-sizing: border-box;
+   border-top: 0;
+   position: relative;
+}
+
+.nxcss-agent-state:nth-child(even) {
+   border-left-width: 0;
+}
+
+.nxcss-agent-state dl
+{
+   margin: 5px;
+   padding: 5px;
+   overflow: hidden;
+   background-color: #e6e9ec;
+}
+.nxcss-agent-state dt, dd
+{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   line-height: 16px;
+   font-size: 12px;
+}
+.nxcss-agent-state dt
+{
+   font-size: 11px;
+   height: 16px;
+   line-height: 16px;
+   text-transform: uppercase;
+   opacity: 0.5;
+}
+
+.nxcss-agent-state dd
+{
+   height: 25px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-weight: 600;
+}
+</style>

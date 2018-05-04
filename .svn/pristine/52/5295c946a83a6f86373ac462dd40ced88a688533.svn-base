@@ -1,0 +1,20 @@
+<div id="nx-monitor-user-queueStats">
+   <!-- title -->
+   <div class="title">
+      <!--img src="img/setting.png" class="setting"/-->
+      <p>QUEUE STATISTICS</p>
+      <!--img src="img/close.png" class="close"/-->
+   </div>
+
+   <!-- detail -->
+   <div class="detail">
+      <ul class="detail_cnt" data-template="user-queueStats-template" data-bind="source: queueStats"></ul>
+   </div>
+</div>
+
+<script id="user-queueStats-template" type="text/x-kendo-template">
+   <li class="detail_list">
+      <p class="detail_list_key" data-bind="text: key"></p>
+      <span class="detail_list_val" data-bind="text: val"></span>
+   </li>
+</script>

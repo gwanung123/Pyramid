@@ -1,0 +1,158 @@
+/***************************************
+ * file : /Contents/containerApply.html
+ * tree
+ **************************************/
+
+.nx-containerApply {
+   height: 100%;
+}
+
+.nx-containerApply-splitter {
+   height: 100%;
+   border: 0px;
+   overflow: hidden;
+}
+
+.nx-containerApply-splitter > .k-splitbar {
+}
+
+.nx-containerApply-title {
+   color: #fff;
+   padding: 5px 15px;
+   margin-bottom: 0px;
+   font-weight: 600;
+   border-top-color: #fff;
+   border-top-style: double;
+   border-top-width: 3px;
+   border-bottom-color: #fff;
+   border-bottom-style: double;
+   border-bottom-width: 3px;
+   text-align: center;
+   background-color: #5a5d63;
+}
+
+.nx-containerApply-left,
+.nx-containerApply-right {
+   /* overflow: hidden !important; */
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+}
+
+/**
+ * left treeview
+ */
+.nxContainerApplyLeft {
+   padding: .92em;
+   height: 93%;
+}
+
+
+/**
+ * right grid
+ */
+
+#nx-dailySchedule-selected-item {
+   font-size: 15px;
+   font-weight: 600;
+   text-decoration: underline;
+   padding: 0px 15px;
+   color: #28a745;
+}
+
+.nxContainerApplyRight .k-dropdown {
+   height: 25px !important;
+}
+
+.nxContainerApplyRight {
+   border-color: #fff;
+   position: absolute;
+   bottom: 0px;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+}
+
+.nxContainerApplyRight .k-grid-toolbar {
+   background-color: #fff;
+   background-image: none;
+   padding: .35em .2em .35em;
+}
+
+.nxContainerApplyRight .k-grid-toolbar .k-button {
+   width: 115px;
+}
+
+.nxContainerApplyRight .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+.nxContainerApplyRight .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   vertical-align: middle;
+}
+
+.nxContainerApplyRight .k-grid-content {
+   position: absolute;
+   top: 58px;
+   bottom: 0px;
+}
+
+.nxContainerApplyRight .k-grid-content table[Role="grid"] {
+   height: 100%;
+}
+
+.nxContainerApplyRight a.k-link:link {
+   color: #fff;
+   text-align: center;
+   font-weight: 600;
+}
+
+.nxContainerApplyRight tbody .k-button {
+   min-width: 20px !important;
+   padding-left: 15px;
+   padding-right: 0px;
+}
+
+.nxContainerApplyRight tbody .k-grid-edit,
+.nxContainerApplyRight tbody .k-grid-update,
+.nxContainerApplyRight tbody .k-grid-cancel,
+.nxContainerApplyRight tbody .k-grid-delete {
+   width: 100px !important;
+   padding-left: 0px !important;
+}
+
+.nxContainerApplyRight tbody .k-state-selected {
+   background-color: #fc7214;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerApplyRight tr {
+}
+
+.nxContainerApplyRight tr:hover {
+   background-color: #868e96;
+}
+
+.nxContainerApplyRight td.k-state-selected:hover,
+.nxContainerApplyRight tr.k-state-selected:hover {
+   background-color: #fc7214;
+}
+
+/* override absolute positioning styles of the validator messages */
+.nxContainerApplyRight .k-tooltip {
+   position: static;
+   margin: 7px 0px !important;
+   border: 0px;
+   padding: 5px 5px;
+}
+
+/* hide validator tooltip callouts */
+.nxContainerApplyRight .k-tooltip .k-callout {
+   display: none;
+}
+

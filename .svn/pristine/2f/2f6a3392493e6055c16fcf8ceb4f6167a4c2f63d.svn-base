@@ -1,0 +1,39 @@
+<div id="main">
+   <!-- title -->
+   <div class="title">
+      <!--img src="img/setting.png" class="setting"/-->
+      <p>QUEUE LIST</p>
+      <!--img src="img/close.png" class="close"/-->
+   </div>
+   
+   <!-- queue -->
+   <div class="queue">
+      <p>Call In Queue</p>
+      <span>2537</span>
+   </div>
+   
+   <!-- detail -->
+   <div class="detail">
+      <ul class="detail_cnt">
+         <li class="waiting">
+            <p>Longest Waiting Call</p>
+            <span>01:45</span>
+         </li>
+         <li class="missed">
+            <p>Missed Calls</p>
+            <span>555</span>
+         </li>
+         <li class="abandon">
+            <p>Abandon Calls</p>
+            <span>11</span>
+         </li>
+         <li class="level">
+            <p>Service Level</p>
+            <span>97%</span>
+         </li>
+      </ul>
+   </div>
+</div>
+
+<script>
+</script>

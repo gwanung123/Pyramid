@@ -1,0 +1,1 @@
+'use strict';define([],   function() {      var DOMID = "nx-header";      function headerViewModel( param ) {};      return {         viewModel: headerViewModel,         domID: DOMID      };   });

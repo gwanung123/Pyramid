@@ -1,0 +1,105 @@
+<div id="nx-contents-left">
+   
+
+    <section id="main">		
+        <div class="chat_ctn">
+        <h3 class="hidden">home content</h3>
+            <div class="chat_mc mc_list">
+                <div class="container">
+                <h4>CHAT LISTS</h4>
+                    <div class="list_col" id="list_col" >
+                        <ul class="listUp_agent" id="listUp_agent">
+                            <!-- <li>
+                            <img src="./../Styles/img/counselor.png">
+                            <span class="chat_list_name" style="width:63%; line-height:40px">1004</span>
+                            <span class="chat_list_time" style="line-height:40px">16:10</span>
+                            </li> -->
+
+                        </ul>
+                           
+                        <ul class="listDown_cus" id="listDown_cus">
+                        </ul>
+                            <!-- <li>
+                                <img src="./../Styles/img/person.png">
+                                <span class="chat_list_name">Customer1</span>
+                                <span class="chat_list_new">N</span>
+                                <span class="chat_list_cnt">welcome!</span>
+                                <span class="chat_list_time">15:57</span>
+                            </li>
+                            <li>
+                                <img src="./../Styles/img/person.png">
+                                <span class="chat_list_name">Customer2</span>
+                                <span class="chat_list_new">N</span>
+                                <span class="chat_list_cnt">welcome!</span>
+                                <span class="chat_list_time">15:57</span>
+                            </li> -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+
+<script type="text/javascript">
+    //기본
+    $(function(){
+            
+        $( "ul_his li" ).click(function() {
+    
+            // alert($(this).index());
+            alert($(this).text());
+        });
+
+         //kms_pop 숨기기 기능
+         $(".mc_contact span img").css({"cursor":"pointer","position":"absolute","top":"0","right":"0"});
+            
+            $(".kms_pop").css("display","none");
+            $(".mc_contact span img").click(function(){
+                if($(".kms_pop").css("display")=="none"){
+                    $(".kms_pop").css("display","block");
+                }
+                else{
+                    $(".kms_pop").css("display","none");
+                }
+                return false;
+            });
+            
+            //kms 이미지 대체
+            $(".mc_contact span img").click(function(){
+                if($(".kms_pop").css("display")=="block"){
+                    $(".mc_contact span img").attr("src","./../Styles/img/kms_close.png");
+                    return false;
+                }
+                else{
+                    $(".mc_contact span img").attr("src","./../Styles/img/menu_kms_btn.png");
+                }              
+            });
+            
+            //.kms_page_num li 마우스올렸을 때
+            $(".kms_page_num li:eq(0)").css("backgroundColor","#e8ecef");
+            $(".kms_page_num li:not(:eq(0))").mouseenter(function(){
+                $(this).css({"backgroundColor":"#e8ecef"});
+            }).mouseleave(function(){
+                $(this).css({"backgroundColor":"#fff"});
+            });
+
+
+            $(".cb1, .cb2").hide();
+            $(".listUp_agent li:eq(0)").click(function(){
+                $(".cb1").show();
+                $(".cb2").hide();
+            });
+            $(".listUp_agent li:eq(1)").click(function(){
+                $(".cb2").show();
+                $(".cb1").hide();
+            });
+    });
+    
+</script>
+   

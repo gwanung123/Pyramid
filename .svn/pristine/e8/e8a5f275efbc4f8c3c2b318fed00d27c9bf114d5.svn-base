@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link rel="Stylesheet" href="../../../Libpack/bootstrap/css/bootstrap.min.css" />
+   <link rel="Stylesheet" href="../../../Libpack/kendo/css/kendo.common.min.css" />
+   <link rel="Stylesheet" href="../../../Libpack/kendo/css/kendo.default.min.css" />
+   <link rel="Stylesheet" href="../../Styles/css/wallboard.css" />
+   <link rel="Stylesheet" href="./styles/css/contents_board.css" />
+</head>
+
+
+<body>
+
+   <div id="nx-contents-board">
+
+      <div id="nx-contents-board-center" class="nx-contents-board-center" data-bind="html: nxViewCenter"></div>
+
+   </div>
+
+
+
+   <script src="../../../Libpack/bootstrap/js/popper.min.js"></script>
+   <script data-main="../contents.main" src="../../../Libpack/require.min.js"></script>
+
+</body>
+</html>

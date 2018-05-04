@@ -1,0 +1,4 @@
+<div id="nx-monitor-user-agentOUT">
+   <h6 class="nxcss-user-title">AGENT OUTBOUND</h6>
+   <div id="nxUserAgentOUTGrid"></div>
+</div>

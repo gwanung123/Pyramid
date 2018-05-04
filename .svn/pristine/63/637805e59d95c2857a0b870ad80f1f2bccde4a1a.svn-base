@@ -1,0 +1,16 @@
+ 
+
+<div id="nx-contents-interactionchat">
+
+    <!-- <div class="row">
+        <div id="nx-contents-interaction-top" class="col-sm-12 nx-contents-interactioncall-top" data-bind="html: nxContentsTop"></div>
+     </div> -->
+  
+     <div class="row">
+        <div id="nx-contents-interactionchat-left" class="col-sm-3 nx-contents-interactionchat-left" data-bind="html: nxContentsLeft"></div>
+        <div id="nx-contents-interactionchat-main" class="col-sm-6 nx-contents-interactionchat-main" data-bind="html: nxContentsMain"></div>
+        <div id="nx-contents-interactionchat-right" class="col-sm-3 nx-contents-interactionchat-right" data-bind="html: nxContentsRight"></div>
+     </div>
+
+</div>
+

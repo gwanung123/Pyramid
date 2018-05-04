@@ -1,0 +1,89 @@
+<div id="nx-wallboard-item">
+   <div id="nx-wallboard-item-listview" class="nxcss-item-listview"></div>
+   <div id="nx-wallboard-item-pager" class="nxcss-item-pager"></div>
+</div>
+
+<script type="text/x-kendo-tmpl" id="item-template">
+   <div class="nxcss-item k-widget">
+      <dl>
+         <dt>#:NAME#</dt>
+         <dd>#:VALUE#</dd>
+      </dl>
+   </div>
+</script>
+
+<style>
+#nx-wallboard-item .k-listview
+{
+   border: 0px;
+}
+
+.nxcss-item-pager
+{
+   border-top: 0;
+   position: absolute;
+   top: 96%;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   font-size: 12px;
+   height: 25px;
+}
+
+.nxcss-item-pager a.k-link:link {
+   color: #fff;
+}
+
+.nxcss-item
+{
+   float: left;
+   width: 25%;
+   box-sizing: border-box;
+   border-top: 0;
+   position: relative;
+}
+
+.nxcss-item:nth-child(even) {
+   border-left-width: 0;
+}
+
+.nxcss-item dl
+{
+   margin: 5px;
+   padding: 5px;
+   overflow: hidden;
+   background-color: #e6e9ec;
+}
+.nxcss-item dt, dd
+{
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   line-height: 16px;
+   font-size: 12px;
+}
+.nxcss-item dt
+{
+   font-size: 20px;
+   height: 40px;
+   line-height: 40px;
+   text-transform: uppercase;
+   opacity: 0.5;
+   text-align: center;
+}
+
+.nxcss-item dd
+{
+   height: 50px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 40px;
+   text-align: center;
+}
+</style>

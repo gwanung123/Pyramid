@@ -1,0 +1,16 @@
+<div id="nx-contents-left">
+
+   <div id="nx-agent-tabstrip">
+      <ul class="nx-agent-tab">
+         <li class="nx-agent-tab-li k-state-active">AGENT</li>
+      </ul>
+
+      <div id="nxAgentAgent" class="nx-agent-tab-body"></div>
+   </div>
+
+</div>
+
+
+<script>
+   $("#nx-agent-tabstrip").kendoTabStrip();
+</script>

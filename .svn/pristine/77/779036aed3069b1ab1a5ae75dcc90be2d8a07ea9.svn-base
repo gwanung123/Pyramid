@@ -1,0 +1,329 @@
+@font-face{font-family:roboto; src:url('../font/Roboto-Regular.ttf');}
+
+/***************************************
+ * bootstrap
+ **************************************/
+.container, .container-fluid {
+   height: 100%;
+   display: table;
+}
+
+/***************************************
+ * kendo
+ **************************************/
+/* progress */
+div.k-loading-mask
+{
+   z-index: 20001; /* must be larger than the z-index:2 of #container */
+}
+
+.k-grid {
+   font-size: 12px;
+   border: none;
+}
+
+.k-tooltip {
+   margin-top: 8px;
+   font-family: 'roboto', Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   color: #808080 !important;
+}
+
+.k-window {
+   right: 0px;
+}
+
+.k-window-titlebar {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   border-color: #5a5d63;
+   font-size: 16px;
+   font-weight: 600;
+}
+
+/* Info template */
+.k-notification-info.k-group {
+   background: rgba(0%,0%,0%,.7);
+   color: #fff;
+}
+.nx-notify-info {
+   width: 450px;
+   height: 150px;
+}
+.nx-notify-info h3 {
+   font-size: 1em;
+   padding: 32px 10px 5px;
+}
+.nx-notify-info img {
+   float: left;
+   margin: 30px 15px 30px 30px;
+}
+
+/* Error template */
+.k-notification-error.k-group {
+   background: rgba(100%,0%,0%,.7);
+   color: #ffffff;
+}
+.nx-notify-error {
+   width: 400px;
+   height: 150px;
+}
+.nx-notify-error h3 {
+   font-size: 1em;
+   padding: 32px 10px 5px;
+}
+.nx-notify-error p {
+   margin-bottom: 5px;
+   font-size: 12px;
+}
+.nx-notify-error img {
+   float: left;
+   margin: 23px 15px 90px 30px;
+}
+
+/* Success template */
+.k-notification-upload-success.k-group {
+   background: rgba(0%,60%,0%,.7);
+   color: #fff;
+}
+.nx-notify-success {
+   width: 240px;
+   height: 100px;
+   padding: 0 30px;
+   line-height: 100px;
+}
+.nx-notify-success h3 {
+   font-size: 1.7em;
+   font-weight: normal;
+   display: inline-block;
+   vertical-align: middle;
+}
+.nx-notify-success img {
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 10px;
+}
+
+
+/* Show Lines between Nodes */
+.k-treeview .k-top,
+.k-treeview .k-mid,
+.k-treeview .k-bot {
+  background-image: url('http://aspnet-skins.telerikstatic.com/mvc/2012.2.607/Default/treeview-nodes.png');
+  background-repeat: no-repeat;
+  margin-left: -16px;
+  padding-left: 16px;
+}
+
+.k-treeview .k-item { background-image: url('http://aspnet-skins.telerikstatic.com/mvc/2012.2.607/Default/treeview-line.png'); }
+.k-treeview .k-last { background-image: none; }
+
+.k-treeview .k-top { background-position: -91px 0; }
+.k-treeview .k-bot { background-position: -69px -22px; }
+.k-treeview .k-mid { background-position: -47px -44px; }
+.k-treeview .k-last .k-top { background-position: -25px -66px; }
+.k-treeview .k-group .k-last .k-bot { background-position: -69px -22px; }
+
+.k-treeview .k-item {
+  background-repeat: no-repeat;
+}
+
+.k-treeview .k-first {
+  background-repeat: no-repeat;
+  background-position: 0 16px;
+}
+
+.k-window-content, .k-content, .k-window-iframecontent{
+  border-bottom:1px solid #5a5d63;
+}
+
+/***************************************
+ * global
+ **************************************/
+ * {
+   font-family: 'roboto', Arial, sans-serif;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   height: 100%;
+}
+
+ul, li, ol {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+/***************************************
+ * file : monitor.html
+ **************************************/
+
+.nx-body {
+   padding-top: 55px;
+}
+
+/*-------------------------------
+   top
+-------------------------------*/
+#nx-top {
+   background-color: #fff;
+   position: fixed;
+   top: 0;
+   right: 0;
+   left: 0;
+   z-index: 1030;
+}
+
+.nx-top-title {
+  color: #494949;
+  font-size: 20px;
+  font-weight: lighter;
+  text-shadow: none;
+  margin-left: 10px;
+}
+
+.navbar.navbar-expand-md.justify-content-between{
+  padding:0;
+  border-bottom: 1px solid #a0a0a0;
+}
+
+.nx-brand {
+  padding-left:25px;
+  margin: 0 !important;
+  font-weight:bold;
+  color:#6d6e71;
+}
+.nx-brand:hover{
+  color:#6d6e71;
+}
+
+.nx-user-info {
+   line-height: 19px;
+   height: 34px;
+}
+
+.nx-user-id {
+   padding-right: 3px;
+   font-family: 'roboto', Arial, sans-serif;
+   font-size: 14px;
+   font-weight: 600;
+   color: #808080;
+}
+
+.nx-btn-logout {
+  width: 70px;
+  height: 26px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 0px;
+  color: #5e92d1;
+  border: 2px solid #5e92d1;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #5e92d1;
+  border-color: #5e92d1;
+}
+
+.report-icon-menubox {
+  border-left:1px solid #a0a0a0;
+  text-align: center;
+  padding-top: 15px;
+  width: 55px;
+  height: 55px;
+}
+
+/*-------------------------------
+   others
+-------------------------------*/
+
+.nx-others-table {
+   height: 100%;
+}
+
+.nx-contents-container {
+   padding-left: 150px;
+   height: 100%;
+   border: 0px;
+   overflow: hidden;
+}
+
+.nx-contents-container > .k-splitbar {
+  display: none;
+}
+
+.nx-contents-body {
+}
+
+
+/***************************************
+ * file : /Containers/sidebar.html
+ **************************************/
+/**
+ * sidebar
+ */
+.nx-sidebar-container {
+   background-color: #1f3a53;
+   position: fixed;
+   top: 55px;
+   bottom: 0px;
+   width: 150px;
+   z-index: 20000;
+}
+
+.nx-sidebar {
+   text-align: center;
+}
+
+.nx-sidebar-resource {
+   background-color: #132434;
+}
+
+.nx-btn-side-offset1 { background-position: 0 0; }
+.nx-btn-side-offset2 { background-position: 0 -50px; }
+.nx-btn-side-offset3 { background-position: 0 -125px; }
+.nx-btn-side-offset4 { background-position: 0 -190px; }
+.nx-btn-side-offset5 { background-position: 0 -250px; }
+.nx-btn-side-offset6 { background-position: 0 -325px; }
+
+.nx-sidebar ul li a {
+   width: 150px;
+   color: #FFF;
+   text-transform: uppercase;
+   display: inline-block;
+   font-weight: 400;
+   font-size: 12px;
+   padding: 20px;
+   text-align: left;
+   text-shadow: none;
+   text-decoration: none;
+   line-height: 20px;
+}
+
+.nx-sidebar ul li a:hover {
+   background-color: #132434;
+}
+
+/***************************************
+ * file : /Containers/contents.html
+ **************************************/
+#nx-contents {
+   height: 100%;
+}
+
+#nx-contents-right {
+   height: 100%;
+}
+
+span.k-link {
+  font-weight: 400;
+  font-size: 12px;
+}

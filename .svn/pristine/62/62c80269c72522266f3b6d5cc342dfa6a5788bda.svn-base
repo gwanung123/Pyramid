@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+	<script src='./js/Base64.js'></script>
+	<script src='./js/jquery-3.2.1.js'></script>
+	<script src='./css/bootstrap.min.js'></script>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css" media="screen" />
+	
+	<script>
+		$(document).ready(function() {
+			startClient();
+		});
+	</script>
+</head>
+
+<body>
+
+	<div class="wrap">
+		<div class="divInfo">
+			<div class="container-fluid">
+
+				<div class="row">
+					<div class="col-md-4" id="in-row">
+						<label for="wchatip">WCHAT</label>
+						<input type="text" class="form-control input-sm" placeholder="wchat-host" id="txtHost" value="10.10.30.12:8878">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" id="in-row">
+						<label for="userid">USER-ID</label>
+						<input type="text" class="form-control input-sm" placeholder="anonymous" id="txtId" value="guest">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" id="in-row">
+						<label for="page">PAGE</label>
+						<input type="text" class="form-control input-sm" id="txtPage" value="http://10.10.30.12:8080/">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" id="in-row">
+						<label for="scode">SCODE</label>
+						<input type="text" class="form-control input-sm" placeholder="0001" id="txtScode" value="1">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" id="in-row">
+						<label for="queue">QUEUE</label>
+						<input type="text" class="form-control input-sm" placeholder="6001" id="txtQueue" value="6001">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4" id="in-row">
+						<button class="form-control input-sm" id="btnLink">Link</button>
+					</div>
+				</div>
+			</div>
+	</div>
+	</div>
+
+	<script>
+		function startClient() {
+
+			$("#btnLink").click(function() {
+			
+				var txtHost = $("#txtHost").val(); 
+				var txtId = $("#txtId").val(); 
+				var txtPage = $("#txtPage").val(); 
+				var txtScode = $("#txtScode").val();
+				var txtQueue = $("#txtQueue").val();
+
+				var info = "?ip="+txtHost+"&userid="+txtId+"&page="+txtPage+"&scode="+txtScode+"&queue="+txtQueue;
+				var newwindow = window.open("./webchat-user.html"+info, "", "width=500, height=600");
+				
+			});
+		}
+	</script>
+</body>
+</html>

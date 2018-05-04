@@ -1,0 +1,52 @@
+<div id="nx-monitor-queue-stats" class="nxcss-queue-stats-font">
+   <h5 class="nxcss-queue-stats-title">QUEUE STATS</h5>
+   <div class="nxcss-queue-stats-select">
+      <select id="nx-monitor-queue-stats-select"></select>
+   </div>
+   <table class="nxcss-queue-stats-table">
+      <tbody data-template="queue-stats-template" data-bind="source: queueStats"></tbody>
+   </table>
+</div>
+
+<script id="queue-stats-template" type="text/x-kendo-template">
+   <tr class="nxcss-queue-stats-row">
+      <td class="nxcss-queue-stats-key" data-bind="text: key"></td>
+      <td class="nxcss-queue-stats-val" data-bind="text: val"></td>
+   </tr>
+</script>
+
+<style>
+.nxcss-queue-stats-font {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.nxcss-queue-stats-title {
+   color: #9a9a9a;
+   border-bottom-style: solid;
+   margin-bottom: 15px;
+}
+
+.nxcss-queue-stats-select {
+   padding-bottom: 10px;
+}
+
+.nxcss-queue-stats-table {
+   width: 100%;
+}
+
+.nxcss-queue-stats-row {
+}
+
+.nxcss-queue-stats-key {
+   color: #666;
+   font-size: 14px;
+   width: 70%;
+}
+
+.nxcss-queue-stats-val {
+   color: #2e2e2e;
+   font-size: 14px;
+   font-weight: bold;
+   width: 30%;
+}
+</style>

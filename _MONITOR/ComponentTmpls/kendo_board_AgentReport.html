@@ -1,0 +1,45 @@
+<div id="nx-monitor-agent-report" class="nxcss-agent-report-font">
+   <h5 class="nxcss-agent-report-title">AGENT REPORT</h5>
+   <table class="nxcss-agent-report-table">
+      <tbody data-template="agent-report-template" data-bind="source: agentReport"></tbody>
+   </table>
+</div>
+
+<script id="agent-report-template" type="text/x-kendo-template">
+   <tr class="nxcss-agent-report-row">
+      <td class="nxcss-agent-report-key" data-bind="text: key"></td>
+      <td class="nxcss-agent-report-val" data-bind="text: val"></td>
+   </tr>
+</script>
+
+<style>
+.nxcss-agent-report-font {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.nxcss-agent-report-title {
+   color: #9a9a9a;
+   border-bottom-style: solid;
+   margin-bottom: 15px;
+}
+
+.nxcss-agent-report-table {
+   width: 100%;
+}
+
+.nxcss-agent-report-row {
+}
+
+.nxcss-agent-report-key {
+   color: #666;
+   font-size: 14px;
+   width: 50%;
+}
+
+.nxcss-agent-report-val {
+   color: #2e2e2e;
+   font-size: 14px;
+   font-weight: bold;
+   width: 50%;
+}
+</style>

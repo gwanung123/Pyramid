@@ -1,0 +1,15 @@
+<div id="nx-top">
+   <nav class="navbar navbar-expand-md justify-content-between">
+      <a class="navbar-brand nx-brand" href="../../Views/intro.html">
+        iPECS Cloud CC
+        <span class="nx-top-title">Scenario</span>
+      </a>
+      <form class="form-inline nx-menubox">
+         <a class="navbar-brand nx-user-info" href="#">
+            <span class="nx-user-id" id="nx-user-id" data-bind="text: nxUserID"></span>
+            <button class="btn btn-outline-success nx-btn-logout" data-bind="click: nxDoLogout">LOGOUT</button>
+         </a>
+         <a href="#" class="report-icon-menubox"><img src="../Styles/img/hambur.png"></a>
+      </form>
+   </nav>
+</div>

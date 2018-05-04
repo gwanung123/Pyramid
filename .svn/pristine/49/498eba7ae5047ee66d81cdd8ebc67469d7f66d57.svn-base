@@ -1,0 +1,4 @@
+<div id="nx-monitor-user-agentList">
+   <h6 class="nxcss-user-title">AGENT LIST</h6>
+   <div id="nxUserAgentListGrid"></div>
+</div>

@@ -1,0 +1,151 @@
+/***************************************
+ * file : /Contents/sub/agent.html
+ **************************************/
+#nx-contents-agent {
+   height: 100%;
+   border: 0px;
+}
+
+#nx-contents-agent > .k-splitbar {
+   border-left-color: #5a5d63;
+   border-left-style: dotted;
+   border-right-color: #5a5d63;
+   border-right-style: dotted;
+}
+
+#nx-contents-agent div:nth-child(4) {
+    display: none;
+ }
+
+
+/**
+ * left
+ */
+#nx-agent-tabstrip {
+   font-size: 12px;
+   position: absolute;
+   bottom: 0px;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   background-color: #fff;
+   border: 0px;
+}
+
+.nx-agent-tab {
+   font-weight: 600;
+   margin: 0px !important;
+}
+
+.nx-agent-tab > .k-state-default {
+   background-color: #c5c5c5 !important;
+   background-image: none !important;
+}
+
+.nx-agent-tab > .k-state-hover {
+   background-color: #5a5d63 !important;
+   background-image: none !important;
+}
+
+.nx-agent-tab > .k-state-active {
+   background-color: #5a5d63 !important;
+   background-image: none !important;
+}
+
+.nx-agent-tab-body {
+   margin: 0px !important;
+   height: 88% !important;
+   border: 0px !important;
+}
+
+.nx-agent-tab-body > .k-tabstrip-wrapper {
+   height: 100%;
+}
+
+.nx-agent-tab-li {
+   width: 100%;
+   border: 0px !important;
+}
+
+.nx-agent-tab-li span.k-loading {
+   border: 0px;
+}
+
+.nx-agent-tab-li span.k-link {
+   color: #fff !important;
+}
+
+
+/**
+ * right
+ */
+#nx-contents-right {
+   font-size: 12px;
+}
+
+#nx-contents-right > .k-listbox {
+   height: 100%;
+   width: 100px;
+}
+
+#nx-contents-right > .k-listbox .k-list-scroller {
+   background-color: #5a5d63;
+   font-weight: 600;
+   color: #fff;
+   border: 0px;
+}
+
+/**
+ * center
+ */
+#nx-contents-center {
+   height: 100%;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+.nx-center-table {
+   height: 100%;
+   width: 100%;
+}
+
+.nx-center-top {
+   height: 60px;
+}
+
+.nx-agent-top-col {
+   padding: 0px;
+}
+
+.nx-agent-grid-col {
+   text-align: center;
+   font-weight: 600;
+}
+
+#nxAgentCenterTop {
+   border-color: #fff;
+}
+
+#nxAgentCenterTop .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+#nxAgentCenterTop .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+#nxAgentCenterTop a.k-link:link {
+   color: #fff;
+}
+
+#nxAgentCenterBottom {
+   height: 100%;
+}
+
+.nx-center-bottom-col {
+   border-top-style: double;
+   border-top-color: #9a9a9a;
+}

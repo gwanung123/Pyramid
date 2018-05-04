@@ -1,0 +1,173 @@
+/***************************************
+ * file : /Contents/containerGrid.html
+ * tree
+ **************************************/
+
+.nx-containerGrid {
+   height: 100%;
+}
+
+/**
+ * menu
+ */
+.nx-containerGrid-top {
+   height: 40px;
+}
+
+.nx-containerGrid-top .k-menu-scroll-wrapper {
+   height: 37px !important;
+   width: auto !important;
+}
+
+.nxContainerGridTop {
+   width: 100% !important;
+   height: 100% !important;
+   background-color: whitesmoke;
+   background-image: none !important;
+   background-position: 0% 0% !important;
+   border-width: 0px;
+}
+
+.nxContainerGridTop .k-item {
+   width: 100px;
+   text-align: center;
+   font-weight: 600;
+   color: #fff;
+   background-color: #4dc03d;
+   border-right-width: 0px !important;
+   margin: 4px 1px;
+}
+
+/**
+ * grid
+ */
+
+.nxContainerGridCenter {
+   border-color: #fff;
+   position: absolute;
+   bottom: 93px;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   border: 0px;
+   margin-top: 70px;
+   height: 40%;
+}
+
+/******* toolbar ********/
+.nxContainerGridCenter .k-grid-toolbar {
+   padding: .6em 1.3em .6em .4em;
+}
+
+.nxContainerGridCenter .nx-day-title {
+   padding-left: 1.5em;
+   padding-right: 0.5em;
+   font-weight: 600;
+}
+
+.nxContainerGridCenter .nx-day-search {
+   display: inline-block;
+}
+
+.nxContainerGridCenter .nx-day-search .nx-search-button {
+   width: 150px;
+   font-weight: 600;
+   float: right;
+   margin: 0 20px;
+}
+
+.nxContainerGridCenter .k-grid-excel,
+.nxContainerGridCenter .k-grid-pdf {
+   float: right;
+   width: 150px;
+   font-weight: 600;
+}
+/******* toolbar ********/
+
+.nxContainerGridCenter .k-header {
+   background-color: #fff;
+   background-image: none;
+}
+
+.nxContainerGridCenter .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+.nxContainerGridCenter .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+.nxContainerGridCenter .k-grid-content-locked {
+   border-color: #aaa;
+   border-right-width: 2px;
+}
+
+.nxContainerGridCenter .k-grid-content {
+   position: absolute;
+   top: 73px;
+   bottom: 0px;
+}
+
+.nxContainerGridCenter .k-pager-wrap {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   position: absolute;
+   width: 100%;
+   height: 25px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+}
+
+.nxContainerGridCenter a.k-link:link {
+   color: #fff;
+}
+
+.nxContainerGridCenter tbody .k-button {
+   min-width: 20px !important;
+   padding-left: 15px;
+   padding-right: 0px;
+}
+
+.nxContainerGridCenter tbody .k-state-selected {
+   background-color: #fff;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerGridCenter tr:hover {
+   background-color: #fff;
+}
+
+.nxContainerGridCenter td.k-state-selected:hover, .nxContainerGridCenter tr.k-state-selected:hover {
+   background-color: #fff;
+}
+
+/* override absolute positioning styles of the validator messages */
+.nxContainerGridCenter .k-tooltip {
+   position: static;
+   margin: 7px 0px !important;
+   border: 0px;
+   padding: 5px 5px;
+}
+
+/* hide validator tooltip callouts */
+.nxContainerGridCenter .k-tooltip .k-callout {
+   display: none;
+}
+
+/**
+ * chart
+ */
+.nx-containerGrid-bottom {
+   position: absolute;
+   top: 50%;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   padding: 10px 50px;
+}

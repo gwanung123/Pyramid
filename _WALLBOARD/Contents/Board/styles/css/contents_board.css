@@ -1,0 +1,18 @@
+/***************************************
+ * file : /Contents/sub/board.html
+ * grid
+ **************************************/
+#nx-contents-board {
+   height: 100%;
+   border: 0px;
+}
+
+.nx-contents-board-center {
+   overflow: hidden !important;
+}
+
+/**
+ * center
+ */
+
+

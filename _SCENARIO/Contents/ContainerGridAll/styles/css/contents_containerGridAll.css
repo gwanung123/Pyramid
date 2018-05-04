@@ -1,0 +1,109 @@
+/***************************************
+ * file : /Contents/containerGridAll.html
+ * tree
+ **************************************/
+
+.nx-containerGridAll {
+   height: 100%;
+}
+
+
+/**
+ * grid
+ */
+/*
+.k-grid-content {
+   position: absolute;
+   top: 62px;
+   bottom: 0px;
+}
+*/
+
+.nxContainerGridAllCenter {
+   border-color: #fff;
+   position: absolute;
+   bottom: 0px;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   border: 0px;
+   margin-top: 35px;
+   height: 90.5%;
+}
+
+.nxContainerGridAllCenter .k-grid-toolbar {
+   background-color: #fff;
+   background-image: none;
+   height: 26px;
+}
+
+.nxContainerGridAllCenter .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+.nxContainerGridAllCenter .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+.nxContainerGridAllCenter .k-grid-content-locked {
+   border-color: #aaa;
+   border-right-width: 2px;
+}
+
+.nxContainerGridAllCenter .k-grid-content {
+   position: absolute;
+   top: 62px;
+   bottom: 0px;
+}
+
+.nxContainerGridAllCenter .k-pager-wrap {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   position: absolute;
+   width: 100%;
+   height: 25px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+}
+
+.nxContainerGridAllCenter a.k-link:link {
+   color: #fff;
+}
+
+.nxContainerGridAllCenter tbody .k-button {
+   min-width: 20px !important;
+   padding-right: 0px;
+}
+
+.nxContainerGridAllCenter tbody .k-state-selected {
+   background-color: #fff;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerGridAllCenter tr:hover {
+   background-color: #868e96;
+}
+
+.nxContainerGridAllCenter td.k-state-selected:hover, .nxContainerGridAllCenter tr.k-state-selected:hover {
+   background-color: #868e96;
+}
+
+/* override absolute positioning styles of the validator messages */
+.nxContainerGridAllCenter .k-tooltip {
+   position: static;
+   margin: 7px 0px !important;
+   border: 0px;
+   padding: 5px 5px;
+}
+
+/* hide validator tooltip callouts */
+.nxContainerGridAllCenter .k-tooltip .k-callout {
+   display: none;
+}
+

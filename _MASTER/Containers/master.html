@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>iPECS-Master</title>
+   <link rel="shortcut icon" href="../Styles/img/logo_pyramid_16.png" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Pyramid Master">
+   <meta name="author" content="NEXUS COMMUNITY">
+
+   <link rel="Stylesheet" href="../../Libpack/bootstrap/css/bootstrap.min.css" />
+   <link rel="Stylesheet" href="../../Libpack/kendo/css/kendo.common.min.css" />
+   <link rel="Stylesheet" href="../../Libpack/kendo/css/kendo.default.min.css" />
+   <link rel="Stylesheet" href="../Styles/css/master.css" />
+</head>
+
+
+<body class="nx-body">
+
+   <!-- TOP BAR -->
+   <div class="nx-table">
+      <div data-bind="html: nxTop"></div>
+   </div>
+
+   <!-- OTHERS -->
+   <div class="nx-others-table">
+
+      <!-- SIDEBAR -->
+      <div class="nx-sidebar-container">
+         <nav class="nx-sidebar">
+            <div data-bind="html: nxSidebarmenu"></div>
+         </nav>
+      </div>
+
+      <!-- CONTENTS -->
+      <div id="nx-contents-container" class="nx-contents-container">
+
+         <!-- BODY -->
+         <div class="nx-contents-body" data-bind="html: nxContents"></div>
+
+      </div>
+
+   </div>  <!--container-fluid end -->
+
+
+   <script src="../../Libpack/bootstrap/js/popper.min.js"></script>
+   <script data-main="master" src="../../Libpack/require.min.js"></script>
+
+</body>
+</html>

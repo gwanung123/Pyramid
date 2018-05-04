@@ -1,0 +1,4 @@
+<div id="nx-monitor-user-queueList">
+   <h6 class="nxcss-user-title">QUEUE LIST</h6>
+   <div id="nxUserQueueListGrid"></div>
+</div>

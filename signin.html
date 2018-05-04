@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>iPECS Cloud CC</title>
+   <link rel="shortcut icon" href="Styles/img/logo_nexuscube_16.ico" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <link rel="Stylesheet" href="Styles/css/signin.css" />
+
+   <script src="Libpack/bootstrap/js/popper.min.js"></script>
+   <script data-main="signin.js" src="Libpack/require.js"></script>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false">
+   <div id="wrapper">
+      <!--header-->
+      <header id="header">
+         <p class="logo">iPECS Cloud CC</p>
+         <span class="ver">Version A-CCC-Tmp1804-1.0.1</span>
+         <img src="Styles/img/iPECS_icon.png" alt="iPECS"/>
+      </header> <!--header end-->
+
+      <!--main-->
+      <section id="main">
+         <h3 class="hidden">로그인창</h3>
+         <div class="container">
+            <form action="#" method="post" name="login">
+               <fieldset>
+                  <legend>로그인</legend>
+                  <p class="login_id">
+                     <input type="text" id="userid" name="userid" placeholder="Enter User ID" autocomplete="off" data-bind="value: userid" />
+                  </p>
+                  <p class="login_pw">
+                     <input type="password" id="userpass" name="userpass" placeholder="Enter Password" data-bind="value: password" />
+                  </p>
+                  <p class="check">
+                     <input type="checkbox" id="remember_ck" data-bind="checked: autosignin"/>
+                     <label>Remember Me</label>
+                  </p>
+                  <p id="login_btn">
+                     <input type="button" value="LOG IN" style="margin-bottom:4px" data-bind="click: submit" />
+                     <img src="Styles/img/setting_icon.png" alt="SETTING" title="setting" id="opt"/>
+                     <!--<input type="button" value="SETTING" id="opt"/>-->
+                  </p>
+               </fieldset>
+            </form>
+            <span>Copyright Ericsson-LG Enterprise, Co., LTD.2018</span>
+         </div> <!--container end-->
+      </section> <!--main end-->
+
+      <!--footer-->
+      <footer id="footer">
+         <img src="Styles/img/Ericsson-LG_icon.png" alt="Ericsson LG"/>
+      </footer> <!--footer end-->
+   </div> <!--wrapper end-->
+</body>
+</html>
+
+<div id="opt_wrap">
+   <!-- Option Modal -->
+   <div class="modal fade" id="optionModal" tabindex="-1" role="dialog" aria-labelledby="optionModalLabel">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="optionModalLabel">SETTING</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+               <div class="col-md-6 option">
+                 <div class="option-title">
+                   <label for="func">MAIN</label>
+                 </div>
+                 <div class="input-group option-input">
+                   <span class="input-group-addon">HOST</span>
+                   <input type="text" name="mainHost" class="form-control" placeholder="IP ADDRESS" data-bind='value: mainHost_host, valueUpdate: "afterkeydown"'>
+                   <span class="input-group-addon">PORT</span>
+                   <input type="text" name="mainHost" class="form-control" placeholder="PORT" data-bind='value: mainHost_port, valueUpdate: "afterkeydown"'>
+                 </div>
+                 <select class="option-select" multiple="multiple" data-bind="options: mainHosts, value: mainHost_selected, click: mainHost_fill"></select>
+                 <div class="option-button">
+                   <button type="button" class="btn btn-default btn-sm" data-bind="click: mainHost_del">DEL</button>
+                   <button type="button" class="btn btn-default btn-sm" data-bind="click: mainHost_add">ADD</button>
+                 </div>
+               </div>
+               <div class="col-md-offset-6 option">
+                 <div class="option-title">
+                   <label for="func">AUTH</label>
+                 </div>
+                 <div class="input-group option-input">
+                   <span class="input-group-addon">HOST</span>
+                   <input type="text" name="authHost" class="form-control" placeholder="IP ADDRESS" data-bind='value: authHost_host, valueUpdate: "afterkeydown"'>
+                   <span class="input-group-addon">PORT</span>
+                   <input type="text" name="authHost" class="form-control" placeholder="PORT" data-bind='value: authHost_port, valueUpdate: "afterkeydown"'>
+                 </div>
+                 <select class="option-select" multiple="multiple" data-bind="options: authHosts, value: authHost_selected, click: authHost_fill"></select>
+                 <div class="option-button">
+                  <button type="button" class="btn btn-default btn-sm" data-bind="click: authHost_del">DEL</button>
+                  <button type="button" class="btn btn-default btn-sm" data-bind="click: authHost_add">ADD</button>
+                 </div>
+               </div>
+            </div>
+            <div class="row row-line"></div>
+            <div class="row">
+               <div class="col-md-6 option">
+                 <div class="option-title">
+                   <label for="func">PUSH</label>
+                 </div>
+                 <div class="input-group option-input">
+                   <span class="input-group-addon">HOST</span>
+                   <input type="text" name="pushHost" class="form-control" placeholder="IP ADDRESS" data-bind='value: pushHost_host, valueUpdate: "afterkeydown"'>
+                   <span class="input-group-addon">PORT</span>
+                   <input type="text" name="pushHost" class="form-control" placeholder="PORT" data-bind='value: pushHost_port, valueUpdate: "afterkeydown"'>
+                 </div>
+                 <select class="option-select" multiple="multiple" width="100" data-bind="options: pushHosts, value: pushHost_selected, click: pushHost_fill"></select>
+                 <div class="option-button">
+                   <button type="button" class="btn btn-default btn-sm" data-bind="click: pushHost_del">DEL</button>
+                   <button type="button" class="btn btn-default btn-sm" data-bind="click: pushHost_add">ADD</button>
+                 </div>
+               </div>
+               <div class="col-md-offset-6 option">
+                 <div class="option-title">
+                   <label for="func">LOG</label>
+                 </div>
+                 <div class="input-group option-input">
+                   <span class="input-group-addon">HOST</span>
+                   <input type="text" name="logHost" class="form-control" placeholder="IP ADDRESS" data-bind='value: logHost_host, valueUpdate: "afterkeydown"'>
+                   <span class="input-group-addon">PORT</span>
+                   <input type="text" name="logHost" class="form-control" placeholder="PORT" data-bind='value: logHost_port, valueUpdate: "afterkeydown"'>
+                 </div>
+                 <select class="option-select" multiple="multiple" width="100" data-bind="options: logHosts, value: logHost_selected, click: logHost_fill"></select>
+                 <div class="option-button">
+                   <button type="button" class="btn btn-default btn-sm" data-bind="click: pushHost_del">DEL</button>
+                   <button type="button" class="btn btn-default btn-sm" data-bind="click: pushHost_add">ADD</button>
+                 </div>
+               </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bind="click: option_save">Save changes</button>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+   </div>
+</div>
+
+<!-- Fail Modal -->
+<div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h5 class="modal-title" id="myModalLabel"><p class='text-danger'>로그인 실패</p></h5>
+      </div>
+      <div class="modal-body modal-line-h">
+        comment
+      </div>
+    </div>
+  </div>
+</div>

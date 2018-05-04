@@ -1,0 +1,10 @@
+<ul id="nx-sidebar" class="nav nav-list">
+   <!-- <li><a class="nx-btn-side-offset1" href="../../Views/intro.html" data-bind="text: nxTXTSidebarButton1"></a></li> -->
+   <li class="nx-sidebar-resource"><a class="nx-btn-side-offset2" href="#" data-bind="text: nxTXTSidebarButton2, click: nxDoSidebarButton2"></a></li>
+   <li><a class="nx-btn-side-offset3" href="#" data-bind="text: nxTXTSidebarButton3, click: nxDoSidebarButton3"></a></li>
+   <li><a class="nx-btn-side-offset4" href="#" data-bind="text: nxTXTSidebarButton4, click: nxDoSidebarButton4"></a></li>
+   <li><a class="nx-btn-side-offset5" href="#" data-bind="text: nxTXTSidebarButton5, click: nxDoSidebarButton5"></a></li>
+   <li><a class="nx-btn-side-offset6" href="#" data-bind="text: nxTXTSidebarButton6, click: nxDoSidebarButton6"></a></li>
+   <li><a class="nx-btn-side-offset7" href="#" data-bind="text: nxTXTSidebarButton7, click: nxDoSidebarButton7"></a></li> <!--20180404_Sam -->
+   <li><a class="nx-btn-side-offset8" href="#" data-bind="text: nxTXTSidebarButton8, click: nxDoSidebarButton8"></a></li> <!--20180404_Sam -->
+</ul>

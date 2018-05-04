@@ -1,0 +1,213 @@
+/***************************************
+ * file : /Contents/containerQueue.html
+ * tree
+ **************************************/
+
+.nx-containerGridQueue {
+   height: 100%;
+}
+
+.nx-containerGridQueue .k-tabstrip-wrapper {
+   height: 100%;
+}
+
+.nx-containerGridQueue-center {
+   font-size: 12px;
+   position: absolute;
+   bottom: 0px;
+   top: 29px;
+   left: 0px;
+   right: 0px;
+   background-color: #fff;
+   border: 0px;
+   overflow: hidden;
+}
+
+/**
+ * tabstrip-header
+ */
+
+.nx-containerGridQueue-center > .k-tabstrip-items {
+   font-weight: 600;
+   margin: 0px !important;
+}
+
+.nx-containerGridQueue-center > .k-tabstrip-items > .k-state-default {
+   background-color: #c5c5c5 !important;
+   background-image: none !important;
+}
+
+#nxContainer .nx-containerGridQueue-center > .k-tabstrip-items > .k-state-hover {
+   background-color: #17a2b8 !important;
+   background-image: none !important;
+}
+
+#nxContainer .nx-containerGridQueue-center > .k-tabstrip-items > .k-state-active {
+   background-color: #17a2b8 !important;
+   background-image: none !important;
+}
+
+#nxContainer .nx-containerGridQueue-center > .k-tabstrip-items > .k-item {
+   border: 0px !important;
+   width: 50%;
+   text-align: center !important;
+}
+
+#nxContainer .nx-containerGridQueue-center > .k-tabstrip-items > .k-item > span.k-loading {
+   border: 0px;
+}
+
+#nxContainer .nx-containerGridQueue-center > .k-tabstrip-items > .k-item > span.k-link {
+   color: #fff !important;
+   padding-left: 5px;
+}
+
+#nxContainer .nx-containerGridQueue-center > .k-tabstrip-items > .k-item > span.k-remove {
+   padding: 0px;
+   padding-left: 15px;
+   height: 14px;
+}
+
+/**
+ * tabstrip-body
+ */
+
+.nx-containerGridQueue-center .k-content {
+   margin: 0px !important;
+   height: 91% !important;
+   padding: 0px;
+   border-style: dotted;
+}
+
+.nx-containerGridQueue-center .k-content > .k-tabstrip-wrapper {
+   height: 100%;
+}
+
+/**
+ * grid
+ */
+/*
+.k-grid-content {
+   position: absolute;
+   top: 62px;
+   bottom: 0px;
+}
+*/
+
+.nxContainerGridQueue1,
+.nxContainerGridQueue2 {
+    border-color: #fff;
+    /* position: absolute; */
+    position: relative;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    border: 0px;
+    /* margin-top: 26px; */
+    /* height: 90.5%; */
+    height:100%;
+}
+
+.nxContainerGridQueue1 .k-grid-toolbar,
+.nxContainerGridQueue2 .k-grid-toolbar {
+   background-color: #fff;
+   background-image: none;
+   height: 26px;
+}
+
+.nxContainerGridQueue1 .k-grid-header,
+.nxContainerGridQueue2 .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+/* 20180430 Anna */
+.nxContainerGridQueue1 .k-header.k-grid-toolbar{
+    display: none;
+}
+
+.nxContainerGridQueue1 .k-grid-header th,
+.nxContainerGridQueue2 .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+.nxContainerGridQueue1 .k-grid-content-locked,
+.nxContainerGridQueue2 .k-grid-content-locked {
+   border-color: #aaa;
+   border-right-width: 2px;
+}
+
+/* 20180427 Anna Modified */
+.nxContainerGridQueue1 .k-grid-content {
+    position: absolute;
+    top: 30px;
+    bottom: 0px;
+ }
+ 
+ .nxContainerGridQueue2 .k-grid-content {
+    position: absolute;
+    top: 64px;
+    bottom: 0px;
+ }
+ /* end */
+
+.nxContainerGridQueue1 .k-pager-wrap,
+.nxContainerGridQueue2 .k-pager-wrap {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   position: absolute;
+   width: 100%;
+   height: 25px;
+   bottom: 0px;
+   /* right: 0px;
+   left: 0px; */
+}
+
+.nxContainerGridQueue1 a.k-link:link,
+.nxContainerGridQueue2 a.k-link:link {
+   color: #fff;
+}
+
+.nxContainerGridQueue1 tbody .k-button,
+.nxContainerGridQueue2 tbody .k-button {
+   min-width: 20px !important;
+   padding-left: 15px;
+   padding-right: 0px;
+}
+
+.nxContainerGridQueue1 tbody .k-state-selected,
+.nxContainerGridQueue2 tbody .k-state-selected {
+   background-color: #fff;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerGridQueue1 tr:hover,
+.nxContainerGridQueue2 tr:hover {
+   background-color: #868e96;
+}
+
+.nxContainerGridQueue1 td.k-state-selected:hover, .nxContainerGridQueue1 tr.k-state-selected:hover,
+.nxContainerGridQueue2 td.k-state-selected:hover, .nxContainerGridQueue2 tr.k-state-selected:hover {
+   background-color: #868e96;
+}
+
+/* override absolute positioning styles of the validator messages */
+.nxContainerGridQueue1 .k-tooltip,
+.nxContainerGridQueue2 .k-tooltip {
+   position: static;
+   margin: 7px 0px !important;
+   border: 0px;
+   padding: 5px 5px;
+}
+
+/* hide validator tooltip callouts */
+.nxContainerGridQueue1 .k-tooltip .k-callout,
+.nxContainerGridQueue2 .k-tooltip .k-callout {
+   display: none;
+}
+

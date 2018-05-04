@@ -1,0 +1,199 @@
+<div id="nx-contents-main">
+
+    <section id="main">		
+        <div class="main_ctn">
+        <h3 class="hidden">home 내용</h3>
+            <div class="main_mc mc_agent">
+                <p>
+                    <span>AGENT PERFORMANCE</span>
+                    <img src="../Styles/img/refresh_btn.png" alt="새로고침" data-bind="click: displayStat"/>
+                      
+                    
+                </p>
+                
+                <div class="analy">
+                    <button><a href=".a_b1">LOGIN TIME</a></button>
+                    <button><a href=".a_b2">LONGEST TALK TIME</a></button>
+                    <button><a href=".a_b3">AVG.RINGING TIME (CALL)</a></button>
+                    <button><a href=".a_b4">AVG.RINGING TIME (CHAT)</a></button>
+                    <button><a href=".a_b5">INCOMING CALL</a></button>
+                    <button><a href=".a_b6">OUTGOING CALL</a></button>
+                    <button><a href=".a_b7">MAIL</a></button>
+                    <button><a href=".a_b8">CHAT</a></button>
+                </div>
+                
+                <div class="agent_boxes">
+                    <ul class="agent_box a_b1">
+                        <li class="a_b_title">
+                            <!-- <span class="a_b_setting"><a href="#"><img src="../Styles/img/setting_btn.png"/></a></span>
+                            <span>LOGIN TIME</span>
+                            <span class="a_b_close"><img src="../Styles/img/close_btn.png"/></span>                             -->
+                            
+                            <span>LOGIN TIME</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/incomingcall_20_icon.png"/></span><span id ="li_logintime">00:00:00</span></li>
+                        <li class="a_b_avg">Average <span id = "li_logintime_avg">0</span></li>
+                        <li class="a_b_top">Top <span id = "li_logintime_top">0</span></li>
+                    </ul>
+                    <ul class="agent_box a_b2">
+                        <li class="a_b_title">
+                            <span>LONGEST TALK TIME</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/outgoingcall_20_icon.png"/></span><span id ="li_longtalktime">00:00:00</span></li>
+                        <!-- <li class="a_b_avg">Average <span>0</span></li>
+                        <li class="a_b_top">Top <span>0</span></li> -->
+                    </ul>
+                    <ul class="agent_box a_b3">
+                        <li class="a_b_title">
+                            <span>RINGING TIME(CALL)</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/mail_20_icon.png"/></span><span id="li_calltime">00:00:00</span></li>
+                        <li class="a_b_avg">Average <span id="li_calltime_avg">0</span></li>
+                        <li class="a_b_top">Top <span id="li_calltime_top">0</span></li>
+                    </ul>
+                    <ul class="agent_box a_b4">
+                        <li class="a_b_title">
+                            <span>RINGING TIME(CHAT)</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/chat_20_icon.png"/></span><span>00:00:00</span></li>
+                        <li class="a_b_avg">Average <span>0</span></li>
+                        <li class="a_b_top">Top <span>0</span></li>
+                    </ul>
+                    <ul class="agent_box a_b5">
+                        <li class="a_b_title">                              
+                            <span>INCOMING CALL</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/incomingcall_20_icon.png"/></span><span id ="li_ibcall">0</span></li>
+                        <li class="a_b_avg">Average <span id ="li_ibcall_avg">0</span></li>
+                        <li class="a_b_top">Top <span id ="li_ibcall_top">0</span></li>
+                    </ul>
+                    <ul class="agent_box a_b6">
+                        <li class="a_b_title">
+                            <span>OUTGOING CALL</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/outgoingcall_20_icon.png"/></span><span id ="li_obcall">0</span></li>
+                        <li class="a_b_avg">Average <span id ="li_obcall_avg">0</span></li>
+                        <li class="a_b_top">Top <span id ="li_obcall_top">0</span></li>
+                    </ul>
+                    <ul class="agent_box a_b7">
+                        <li class="a_b_title">
+                            <span>MAIL</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/mail_20_icon.png"/></span><span>0</span></li>
+                        <li class="a_b_avg">Average <span>0</span></li>
+                        <li class="a_b_top">Top <span>0</span></li>
+                    </ul>
+                    <ul class="agent_box a_b8">
+                        <li class="a_b_title">
+                            <span>CHAT</span>
+                        </li>
+                        <li class="a_b_num"><span><img src="../Styles/img/chat_20_icon.png"/></span><span>0</span></li>
+                        <li class="a_b_avg">Average <span>0</span></li>
+                        <li class="a_b_top">Top <span>0</span></li>
+                    </ul>
+                </div> <!--agent_boxes end-->
+            </div> <!--mc_agent end-->
+
+
+
+            <div class="main_mc mc_skill">
+                <p>
+                    <span>SKILL (QUEUE/ACD) INFORMATION</span>
+                    <a href="#"><img src="../Styles/img/refresh_btn.png" alt="새로고침"/></a>
+                </p>
+
+                <div id="nxHomeGrid" class="nx-ctts-right-home-grid">
+                </div>
+            </div> <!--mc_skill end-->
+        </div> <!--main_ctn end-->
+    </section> <!--main end-->
+
+
+
+   
+</div>
+
+<script>
+
+    $(function(){
+        $(".analy button a").addClass("selected");
+        $(".analy button a").click(function(){
+            $($(this).attr("href")).toggle(function(){});
+            $(this).toggleClass("selected");
+
+            if($(".selected").length<=5){
+                $(".agent_boxes").animate({height:"170px"});
+                //sliding
+            }
+            else{
+                $(".agent_boxes").animate({height:"325px"});
+            }
+
+            return false;
+        });
+        
+/*
+        //agent 버튼 클릭갯수 세기
+        var ClickCounterViewModel = function() {
+            this.numberOfClicks = ko.observable(0);
+        
+            this.registerClick = function() {
+                this.numberOfClicks(this.numberOfClicks() + 1);
+            };
+            
+            this.resetClicks = function() {
+                this.numberOfClicks(0);
+            };
+        
+            this.hasClickedTooManyTimes = ko.computed(function() {
+                return this.numberOfClicks() >= 3;
+            }, this);
+        };
+      */  
+/*
+        //agent 클릭시 밑에 박스 나타나게 하기
+        $(".analy button a").click(function(){
+            $($(this).attr("href")).toggle(function(){});
+            $(this).toggleClass("selected");
+            if($(".selected").length>4){
+                $(this).removeClass("selected");
+            }
+            else{}
+            return false;
+        });
+*/
+    });
+
+    
+/*
+    var count=0;
+        function myFunction() {
+            if($(this).is("selected")){
+                count+=1;
+                alert(count);
+            }
+            else{
+                count-=1;
+                alert(count);
+            }
+        }
+        $(".agent_box").css("display","none");
+        $(".analy button a").click(function(){
+
+            //$(this).toggleClass("selected"});
+            $(this).toggleClass(function(){
+                myFunction();
+                if($(this).is("selected")){
+                    return false;
+                }
+                else{
+                    return "selected";
+                }
+            });
+
+            $($(this).attr("href")).toggle(function(){});    
+            return false;
+        });
+*/
+</script>
+

@@ -1,0 +1,25 @@
+<div id="nx-contents-left">
+   <div class="nx-ctts-left-search">
+      <input type="text" class="nx-ctts-left-search-input" placeholder="SEARCH">
+      <button class="report-icon-search"></button>
+   </div>
+   <div class="nx-ctts-left-tab">
+      <ul class="nav nav-tabs">
+         <li role="presentation" class="active"><a href="#nxTabTeam" data-toggle="tab">TEAM</a></li>
+         <li role="presentation"><a href="#nxTabGroup" data-toggle="tab">GROUP</a></li>
+         <!-- <li role="presentation"><a href="#nxTabAgent" data-toggle="tab">AGENT</a></li> -->
+      </ul>
+      <div class="tab-content nx-ctts-left-tab-contents">
+         <div id="nxTabTeam" class="tab-pane active">
+            <div class="nx-ctts-left-tab-team">
+               <!-- <h4><span class="nx-ctts-left-tab-team-title" data-bind="text: nxFieldTeamTreeview1"></span></h4>
+               <div id="nxTeamTreeview1" class="nx-ctts-left-tab-team-treeview"></div> -->
+               <!-- <h4><span class="nx-ctts-left-tab-team-title" data-bind="text: nxFieldTeamTreeview2"></span></h4>
+               <div id="nxTeamTreeview2" class="nx-ctts-left-tab-team-treeview"></div> -->
+            </div>
+         </div>
+         <div id="nxTabGroup" class="tab-pane">No content</div>
+         <!-- <div id="nxTabAgent" class="tab-pane">No content</div> -->
+      </div>
+   </div>
+</div>

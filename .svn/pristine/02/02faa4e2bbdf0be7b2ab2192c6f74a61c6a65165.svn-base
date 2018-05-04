@@ -1,0 +1,23 @@
+<div id="nx-contents-top">
+
+   <ul id="nxUserTopButtons">
+      <li><a class="nx-btn-user-offset1" href=".a1" data-bind="text: nxTXTUserButton1"></a></li>
+      <li><a class="nx-btn-user-offset2" href=".a2" data-bind="text: nxTXTUserButton2"></a></li>
+      <li><a class="nx-btn-user-offset3" href=".a3" data-bind="text: nxTXTUserButton3"></a></li>
+      <li><a class="nx-btn-user-offset4" href=".a4" data-bind="text: nxTXTUserButton4"></a></li>
+      <li><a class="nx-btn-user-offset5" href=".a5" data-bind="text: nxTXTUserButton5"></a></li>
+      <li><a class="nx-btn-user-offset6" href=".a6" data-bind="text: nxTXTUserButton6"></a></li>
+      <li><a class="nx-btn-user-offset7" href=".a7" data-bind="text: nxTXTUserButton7"></a></li>
+      <li><a class="nx-btn-user-offset8" href=".a8" data-bind="text: nxTXTUserButton8"></a></li>
+   </ul>
+
+</div>
+
+<script>
+   $(function(){
+      $("#nxUserTopButtons a").click(function(){
+         $($(this).attr("href")).toggle(function(){});
+         return false;
+      });
+   });
+</script>

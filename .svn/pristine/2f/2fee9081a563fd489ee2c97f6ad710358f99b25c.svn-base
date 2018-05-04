@@ -1,0 +1,19 @@
+<div id="nx-contents-top" class="row">
+
+   <table class="nx-board-top-table">
+      <tbody>
+         <tr class="nx-board-top-row">
+            <td class="nx-board-top-col">
+               <div id="nxBoardTopTmplAgentState" class="nx-contents-board-top-agent-state"></div>
+            </td>
+            <td class="nx-board-top-col">
+               <div id="nxBoardTopTmplAgentReport" class="nx-contents-board-top-agent-report"></div>
+            </td>
+            <td class="nx-board-top-col">
+               <div id="nxBoardTopTmplQueueStats" class="nx-contents-board-top-queue-stats"></div>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+
+</div>

@@ -1,0 +1,79 @@
+/***************************************
+ * file : /Contents/sub/queue.html
+ **************************************/
+#nx-contents-queue {
+   height: 100%;
+   border: 0px;
+}
+
+#nx-contents-queue > .k-splitbar {
+   border-left-color: #5a5d63;
+   border-left-style: dotted;
+   border-right-color: #5a5d63;
+   border-right-style: dotted;
+}
+
+#nx-contents-left {
+   height: 100%;
+}
+
+#nxQueueLeft {
+   padding: 15px 10px;
+   font-size: 12px;
+   height: 94%;
+}
+
+#nx-contents-right {
+   font-size: 12px;
+}
+
+#nx-contents-right > .k-listbox {
+   height: 100%;
+   width: 100px;
+}
+
+#nx-contents-right > .k-listbox .k-list-scroller {
+   background-color: #5a5d63;
+   font-weight: 600;
+   color: #fff;
+   border: 0px;
+}
+
+#nx-contents-center {
+   height: 100%;
+   width: 100%;
+   overflow-x: hidden;
+}
+
+.nx-center-table {
+   height: 100%;
+   width: 100%;
+}
+
+.nx-center-top {
+   height: 100px;
+}
+
+.nx-center-top-col {
+   width: 19%;
+}
+
+.nx-center-top-title {
+   text-align: center;
+}
+
+.nx-center-top-value {
+   text-align: center;
+}
+
+.nx-center-right {
+   vertical-align: top;
+   padding: 15px 10px;
+   border-left-style: double;
+   border-left-color: #9a9a9a;
+}
+
+.nx-center-bottom-col {
+   border-top-style: double;
+   border-top-color: #9a9a9a;
+}

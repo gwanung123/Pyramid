@@ -1,0 +1,45 @@
+<div id="nx-contents-left">
+
+   <div id="nx-resource-tabstrip">
+      <ul class="nx-resource-tab">
+         <li class="nx-resource-tab-li">MASTER</li>
+         <li class="nx-resource-tab-li">DEVICE</li>
+         <li class="nx-resource-tab-li k-state-active">SCENARIO</li>
+      </ul>
+
+      <div class="nx-resource-tab-body">
+         <div id="nx-master-tabstrip">
+            <ul class="nx-master-tab nx-resource-tab">
+               <li class="nx-master-tab-li k-state-active">AGENT</li>
+               <li class="nx-master-tab-li">SKILL</li>
+            </ul>
+
+            <div id="nxTreeviewAgent" class="nx-master-tab-body"></div>
+            <div id="nxTreeviewSkill" class="nx-master-tab-body"></div>
+         </div>
+      </div>
+
+      <div class="nx-resource-tab-body">
+         <div id="nx-device-tabstrip">
+            <ul class="nx-device-tab nx-resource-tab">
+               <li class="nx-device-tab-li k-state-active">DN</li>
+               <li class="nx-device-tab-li">QUEUE</li>
+            </ul>
+
+            <div id="nxTreeviewDn" class="nx-device-tab-body"></div>
+            <div id="nxTreeviewQueue" class="nx-device-tab-body"></div>
+         </div>
+      </div>
+
+      <div class="nx-resource-tab-body">
+         <div id="nxTreeviewScenario" class="nx-device-tab-body"></div>
+      </div>
+   </div>
+
+</div>
+
+<script>
+   $("#nx-resource-tabstrip").kendoTabStrip();
+   $("#nx-master-tabstrip").kendoTabStrip({tabPosition: "bottom"});
+   $("#nx-device-tabstrip").kendoTabStrip({tabPosition: "bottom"});
+</script>

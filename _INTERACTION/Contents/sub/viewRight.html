@@ -1,0 +1,280 @@
+<div id="nx-contents-right">
+
+<section id="main">		
+    <div class="right_ctn">
+        <h3 class="hidden">home 내용</h3>
+        <div class="mc_contact">
+            <div class="container">
+            <h4>CUSTOMER CONTACT EXPERIENCE</h4>							
+                
+                <!-- <div class="contact_graph"><img src="./../Styles/img/chart.png"></div> -->
+
+                <div id="chart"></div>
+
+
+                <div class="contact_tab">
+                    <ul class="tab_title">
+                        <li><a href="#tab1">ALL<span>(00)</span></a></li>
+                        <li><a href="#tab2">CALL<span>(00)</span></a></li>
+                        <li><a href="#tab3">MAIL<span>(00)</span></a></li>
+                        <li><a href="#tab4">CHAT<span>(00)</span></a></li>
+                    </ul>
+                    <!-- <ul class="tab_type">
+                        <li>
+                            <select id="tab_type1" name="tab_type1">
+                                <option value="data">Data</option>
+                                <option value="data">Data</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select id="tab_type2" name="tab_type2">
+                                <option value="type">TypeA</option>
+                                <option value="type">TypeA</option>
+                            </select>
+                        </li>
+                        <li>
+                            <select id="tab_type3" name="tab_type3">
+                                <option value="type">TypeB</option>
+                                <option value="type">TypeB</option>
+                            </select>
+                        </li>
+                    </ul> -->
+                    <ul class="tab_cnt">
+                        <!-- <li>
+                            <div class="panel" id="tab1">
+                                <ul>
+                                    <li>2017.12.01</li>
+                                    <li>Nexus card</li>
+                                    <li>Family card</li>
+                                </ul>
+                                <ul>
+                                    <li>2017.12.02</li>
+                                    <li>Nexus card2</li>
+                                    <li>Family card2</li>
+                                </ul>
+                            </div>
+                        </li> -->
+                        <!--ALL-->
+                        <div id="nxCustomerGrid" >
+                        </div>
+
+    
+                    </ul>
+                </div>
+            </div> <!--container end-->
+
+
+
+            <div class="kms_pop">
+                <!-- <h4>KMS(Knowledge Management System) </h4> -->
+                
+                <span class="kms_top">KMS</span>
+                <div class="kms_tab">
+                    <ul>
+                        <li>
+                            <a href="#tab1" class="tab_title tt1">Search</a>
+                            <div id="tab1" class="panel">
+                                <!-- <div id="nxKmsGrid"  class="nx-ctts-right-home-grid"> </div> -->
+                                <div id="nxKmsGrid"  > </div>
+                                <div class="kms_search">
+                                    <input class=k-textbox type=text id="txtSearchString" placeholder="enter search text..." />  
+                                    <button id="btnSearch" data-bind="click: kmsSearch" >Search</button>
+                                </div>
+                                <div class="kms_detail_cnt">detail</div>
+                                <button class="score">give score</button>
+                                <!-- <ul class="kms_score">
+                                    <li><img src="./../Styles/img/rate_on_9_btn.png"></li>
+                                    <li><img src="./../Styles/img/rate_on_9_btn.png"></li>
+                                    <li><img src="./../Styles/img/rate_on_9_btn.png"></li>
+                                    <li><img src="./../Styles/img/rate_on_9_btn.png"></li>
+                                    <li><img src="./../Styles/img/rate_on_9_btn.png"></li>
+                                </ul> -->
+
+                                <!-- 20180503 Anna -->
+                                <div class="kms_score">
+                                    <select>
+                                        <option>★★★☆☆</option>
+                                        <!-- <option style="background-image:url(./../Styles/img/rate_5_btn.png);"></option> -->
+                                        <!-- <option><img src="./../Styles/img/rate_5_btn.png"/></option> -->
+                                    </select>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#tab2" class="tab_title tt2">Inquiry</a>
+                            <div id="tab2" class="panel">
+                               
+                                <ul class="inquiry_cnt">
+                                    <li>
+                                        <span>Major</span>
+                                        <select id="" name="">
+                                            <option value="data">Major1</option>
+                                            <option value="data">Major2</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <span>Sub</span>
+                                        <select id="" name="">
+                                            <option value="data">Sub1</option>
+                                            <option value="data">Sub2</option>
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <span>Title</span>
+                                        <span><input class="title_info" id ="kmstitle" type=text placeholder="TITLE"/></span>
+                                    </li>
+                                    <li class="edit_title">Content</li>
+                                    <textarea class="memo" id ="kmscontent" style="resize:none"></textarea>
+                                </ul>
+                                <button data-bind="click: kmsSave" >submit</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                    <!-- 
+                    <div class="kms_detail">
+                        <h5>What is communication live?</h5>
+                        <span>detail</span> 
+                    -->
+                    </div>
+
+            </div>
+
+        </div> <!--mc_contact end-->
+    </div> <!--call_ctn end-->
+</section> <!--main end-->
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+        //kms_pop 숨기기 기능
+        $(".kms_pop").css("display","none");
+        $(".report-icon-menubox").click(function(){
+            if($(".kms_pop").css("display")=="none"){
+                $(".kms_pop").css("display","block");
+                // $(".report-icon-menubox img").attr("src","./../Styles/img/kms_close.png");
+            }
+            else{
+                $(".kms_pop").css("display","none");
+                // $(".report-icon-menubox img").attr("src","./../Styles/img/menu_kms_btn.png");
+            }
+        });
+        
+        // //kms 이미지 대체
+        // $(".report-icon-menubox").click(function(){
+        //     if($(".kms_pop").css("display")=="block"){
+        //         $(".report-icon-menubox img").attr("src","./../Styles/img/menu_kms_btn.png");
+        //         return false;
+        //     }
+        //     else{
+        //         $(".report-icon-menubox img").attr("src","./../Styles/img/kms_close.png");
+        //     }         
+        // });
+
+        // tab
+        $(".panel:not(:first)").hide();
+        $(".tab_title.tt1").addClass("selected2");
+        $(".tab_title").click(function(){
+            $(".panel").hide();
+            $($(this).attr("href")).show();
+            $(".tab_title").removeClass("selected2");
+            $(this).addClass("selected2");
+            return false;
+        });
+        
+        /*
+        //.kms_page_num li 마우스올렸을 때
+        $(".kms_page_num li:eq(0)").css("backgroundColor","#e8ecef");
+        $(".kms_page_num li:not(:eq(0))").mouseenter(function(){
+            $(this).css({"backgroundColor":"#e8ecef"});
+        }).mouseleave(function(){
+            $(this).css({"backgroundColor":"#fff"});
+        });
+        */
+
+        //20180502 Anna
+        //score
+        // var i = 0;
+        // $(".kms_score li").click(function(){
+        //     for(i=0; i<=$(this).index(); i++){
+        //         $(".kms_score li:eq("+i+")").addClass("selected4");
+        //     }
+        // });
+
+});
+
+</script>
+
+<script>
+    function createChart() {
+        $("#chart").kendoChart({
+            //title: {
+            //    text: "CUSTOMER CONTACT EXPERIENCE"
+            //},
+            legend: {
+               position: "bottom"
+            },
+            seriesDefaults: {
+                labels: {
+                    template: "#= category # - #= kendo.format('{0:P}', percentage)#",
+                    position: "outsideEnd",
+                    visible: true,
+                    background: "transparent"
+                }
+            },
+            series: [{
+                type: "donut",
+                overlay: {
+                    gradient: "none"
+                },
+                data: [{
+                    category: "problem1",
+                    value: 15,
+                    color: "#7692e2"
+                }, {
+                    category: "problem2",
+                    value: 20,
+                    color: "#3e4098"
+                }, {
+                    category: "problem3",
+                    value: 30,
+                    color: "#7ed7d7"
+                },
+                 {
+                    category: "problem4",
+                    value: 35,
+                    color: "#ffbb44"
+                }]
+            }],
+            tooltip: {
+                visible: true,
+                template: "#= category # - #= kendo.format('{0:P}', percentage) #"
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        createChart();
+        $(document).bind("kendo:skinChange", createChart);
+        $(".box").bind("change", refresh);
+    });
+
+    function refresh() {
+        var chart = $("#chart").data("kendoChart"),
+            pieSeries = chart.options.series[0],
+            labels = $("#labels").prop("checked"),
+            alignInputs = $("input[name='alignType']"),
+            alignLabels = alignInputs.filter(":checked").val();
+
+        chart.options.transitions = false;
+        pieSeries.labels.visible = labels;
+        pieSeries.labels.align = alignLabels;
+
+        alignInputs.attr("disabled", !labels);
+
+        chart.refresh();
+    }
+</script>

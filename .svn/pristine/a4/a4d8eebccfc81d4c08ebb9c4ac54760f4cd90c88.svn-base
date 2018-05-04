@@ -1,0 +1,81 @@
+/***************************************
+ * file : /Contents/board.html
+ **************************************/
+#nx-contents-board {
+   width: 100%;
+   height: 100%;
+}
+
+.nx-contents-board-table {
+   margin: 0px;
+   width: 100%;
+   height: 100%;
+}
+
+.nx-contents-board-top-row {
+   height: 300px;
+}
+
+.nx-contents-board-bottom-row {
+}
+
+.nx-contents-board-top-col {
+   width: 75%;
+   vertical-align: top;
+}
+
+.nx-contents-board-right-col {
+   vertical-align: top;
+   padding: 30px 30px;
+}
+
+.nx-contents-board-bottom-col {
+   vertical-align: top;
+   padding: 30px 30px;
+}
+
+/***************************************
+ * file : /Contents/sub/viewBoardTop.html
+ **************************************/
+
+#nx-contents-top {
+   border-bottom-style: solid;
+   border-bottom-color: #9a9a9a;
+   height: 300px;
+   margin: 30px 30px;
+}
+
+.nx-board-top-table {
+   width: 100%;
+}
+
+.nx-board-top-col {
+   vertical-align: top;
+   width: 33%;
+}
+
+.nx-contents-board-top-agent-state {
+   padding-right: 5%;
+}
+
+.nx-contents-board-top-agent-report {
+   padding-right: 5%;
+}
+
+.nx-contents-board-top-queue-stats {
+}
+
+/***************************************
+ * file : /Contents/sub/viewBoardBottom.html
+ **************************************/
+
+#nx-contents-bottom {
+   padding-top: 30px;
+}
+
+/***************************************
+ * file : /Contents/sub/viewBoardRight.html
+ **************************************/
+
+#nx-contents-right {
+}

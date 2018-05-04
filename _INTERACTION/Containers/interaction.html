@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Interaction</title>
+   <link rel="shortcut icon" href="../Styles/img/logo_pyramid_16.png" />
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Pyramid Monitor">
+   <meta name="author" content="NEXUS COMMUNITY">
+
+   <link rel="Stylesheet" href="../../Libpack/bootstrap/css/bootstrap.css" />
+   <link rel="Stylesheet" href="../../Libpack/bootstrap/css/bootstrap.min.css" />
+
+   <link rel="Stylesheet" href="../../Libpack/kendo/css/kendo.common.min.css" />
+   <link rel="Stylesheet" href="../../Libpack/kendo/css/kendo.default.min.css" />
+   <link rel="Stylesheet" href="../Styles/css/interaction.css" />
+
+ 
+  
+</head>
+
+
+<body id ="body">
+
+   <!-- TOP BAR -->
+   <nav class="navbar navbar-expand-md justify-content-between nx-top">
+      <a class="navbar-brand nx-brand" href="../../Views/intro.html" >
+        iPECS Cloud CC
+         <span class="nx-top-title">Interaction</span>
+      </a>
+      <form class="form-inline nx-menubox">
+         <a href="#" class="report-icon-menubox"><img src="../Styles/img/menu_kms_btn.png"></a>
+      </form>
+   </nav>
+
+   <!-- OTHERS -->
+   <div class="container-fluid nx-others-table">
+
+      <div class="row nx-others-row">
+         <!-- SIDEBAR -->
+         <div class="col-sm-1 nx-sidebar-container">
+            <nav class="nx-sidebar">
+               <div data-bind="html: nxSidebarmenu"></div>
+            </nav>
+         </div>
+
+        
+
+         <!-- CONTENTS -->
+         
+        <div class="col-sm-11 ml-sm-auto nx-contents-container">
+
+            <!-- HEADER -->
+            <div class="nx-contents-header" data-bind="html: nxHeader"></div>
+
+            <!-- BODY -->
+            <div class="nx-contents-body" data-bind="html: nxContents"></div>
+
+         </div>
+      </div>
+
+   </div><!--container-fluid end -->
+
+
+   <!-- <script src="../../Libpack/bootstrap/js/popper.min.js"></script>
+   <script data-main="interaction" src="../../Libpack/require.min.js"></script> -->
+
+   <script src="../../Libpack/bootstrap/js/popper.min.js"></script>
+   <script data-main="interaction" src="../../Libpack/require.min.js"></script>
+
+
+</body>
+</html>
+

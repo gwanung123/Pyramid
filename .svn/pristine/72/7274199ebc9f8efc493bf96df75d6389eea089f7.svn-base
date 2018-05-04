@@ -1,0 +1,4 @@
+<div id="nx-monitor-user-agentIN">
+   <h6 class="nxcss-user-title">AGENT INBOUND</h6>
+   <div id="nxUserAgentINGrid"></div>
+</div>

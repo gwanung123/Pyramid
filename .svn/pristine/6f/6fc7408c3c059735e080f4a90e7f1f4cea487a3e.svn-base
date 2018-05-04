@@ -1,0 +1,21 @@
+<div id="nx-monitor-user-agentState">
+   <h6 class="title">AGENT STATE</h6>
+   <table class="nx-user-agentState-table">
+      <tbody>
+         <tr class="nx-user-agentState-top">
+            <td colspan="4" class="nx-user-agentState-top-col">
+               <div id="nxUserAgentStateChart"></div>
+            </td>
+         </tr>
+         <tr class="nx-user-agentState-bottom" data-template="user-agentState-template" data-bind="source: agentStateChart">
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+<script id="user-agentState-template" type="text/x-kendo-template">
+   <td class="nx-user-agentState-bottom-col">
+      <h6 class="nx-user-agentState-bottom-title" data-bind="text: key"></h6>
+      <h5 class="nx-user-agentState-bottom-value" data-bind="text: val"></h5>
+   </td>
+</script>

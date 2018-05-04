@@ -1,0 +1,32 @@
+<div id="nx-contents-center">
+   <table class="nx-center-table">
+      <tbody>
+         <tr class="nx-center-top">
+            <td class="nx-center-top-col">
+               <h6 class="nx-center-top-title" data-bind="text: nxTXTServiceLevel"></h6>
+               <h2 class="nx-center-top-value" data-bind="text: nxVALServiceLevel"></h2>
+            </td>
+            <td class="nx-center-top-col">
+               <h6 class="nx-center-top-title" data-bind="text: nxTXTAnswerRate"></h6>
+               <h2 class="nx-center-top-value" data-bind="text: nxVALAnswerRate"></h2>
+            </td>
+            <td class="nx-center-top-col">
+               <h6 class="nx-center-top-title" data-bind="text: nxTXTRealEnter"></h6>
+               <h2 class="nx-center-top-value" data-bind="text: nxVALRealEnter"></h2>
+            </td>
+            <td class="nx-center-top-col">
+               <h6 class="nx-center-top-title" data-bind="text: nxTXTWaitCall"></h6>
+               <h2 class="nx-center-top-value" data-bind="text: nxVALWaitCall"></h2>
+            </td>
+            <td rowspan="2" class="nx-center-right">
+               <div id="nxQueueCenterTmplQueueStats"></div>
+            </td>
+         </tr>
+         <tr class="nx-center-bottom">
+            <td colspan="4" class="nx-center-bottom-col">
+               <div id="nxQueueCenterQueueStats"></div>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+</div>

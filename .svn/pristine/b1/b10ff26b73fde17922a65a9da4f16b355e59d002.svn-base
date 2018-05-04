@@ -1,0 +1,363 @@
+<div id="nx-contents-left">
+    
+    <section id="main">		
+        <div class="call_ctn">
+        <h3 class="hidden">home contents</h3>
+            <div class="call_mc_left">
+                <div class="container">
+                    <div class="call_mc mc_status">
+                    <h4>CALL STATUS</h4>
+                        <div class="mc_status_box">
+                            <ul class="mc_status_top">
+                                <li class="inbound_left">Inbound (<span style="font-weight:600; color:#494949">00:00:00</span>)</li>
+                                <li class="inbound_right">
+                                    <!-- <span class="inbound_dot"></span> -->
+                                    <span id ="status">Log off..</span>
+                                    <!-- <span class="inbound_pause"><img src="./../Styles/img/pause_btn.png"></span>  -->
+                                </li>
+                                <li class="keypad_num">
+                                    <input name="inputTelno" id ="inputTelno" class="inputTelno" placeholder="Please Enter Num.">	
+                                </li>
+                                <!-- <li class="keypad_btn"><img src="./../Styles/img/keypad_btn.png"></li> -->
+                            </ul>
+                            <div class="keypad">
+                                <ul class="col_num">
+                                    <li value="1">1</li>
+                                    <li value="2">2</li>
+                                    <li value="3">3</li>
+                                </ul>
+                                <ul class="col_num">
+                                    <li value="4">4</li>
+                                    <li value="5">5</li>
+                                    <li value="6">6</li>
+                                </ul>
+                                <ul class="col_num">
+                                    <li value="7">7</li>
+                                    <li value="8">8</li>
+                                    <li value="9">9</li>
+                                </ul>
+                                <ul class="col_num">
+                                    <li style="width:100%" value="0">0</li>
+                                </ul>
+                            </div>
+                            <ul class="mc_status_bottom">
+                                <li class="call_type call_type_hov b_hold">
+                                    <span><img src="./../Styles/img/hold_30_hover_btn.png" data-bind="click: holdCall" ></span>
+                                    <span>HOLD</span>
+                                </li>
+                                <li class="call_type call_type_hov b_retry">
+                                    <span><img src="./../Styles/img/retry_30_hover_btn.png" data-bind="click: retrieveCall" ></span>
+                                    <span>RETRY</span>
+                                </li>
+                                <li class="call_type call_type_hov b_consul">
+                                    <span><img src="./../Styles/img/consult_30_hover_btn.png" data-bind="click: consultCall" ></span>
+                                    <span>CONSULT</span>
+                                </li>
+                                <li class="call_type b_trans">
+                                    <span><img src="./../Styles/img/trans_30_hover_btn.png" data-bind="click: transferCall" ></span>
+                                    <span>TRANS</span>
+                                </li>
+                                <li class="call_type b_confer">
+                                    <span><img src="./../Styles/img/confer_30_hover_btn.png" data-bind="click: conferenceCall" ></span>
+                                    <span>CONFER</span>
+                                </li>
+                            </ul>
+
+
+                            <div>
+
+                                <button type="button" class="outbound_btn" data-bind="click: makeCall" >
+                                    <!-- <img src="./../Styles/img/outgoingcall_20_icon.png"> -->
+                                    <span>Make call</span>
+                                </button>
+                                <div class="make_call">
+                                    <button type="button" class="ac" data-bind="click: answerCall" >
+                                        <!-- <img src="./../Styles/img/accept_call.png"> -->
+                                        <span>Accept call</span>
+                                    </button>
+                                    <button type="button" class="cc" data-bind="click: clearCall">
+                                        <!-- <img src="./../Styles/img/reject_call.png"> -->
+                                        <span id = "btnCC">Reject</span>
+                                    </button>
+                                </div>
+
+
+                            </div>
+                         
+
+                        </div> <!--mc_status_box end-->
+
+                        <!-- 20180424 Anna -->
+                        <button class="cust_info" data-bind="click: getCustInfo">Cust_Info</button>
+                    </div>
+                    <div class="call_mc mc_callback">
+                        
+                        <div class="callback_box call1">
+                            <p class="callback_title">CALLBACK (<span>00</span>) <span class="call_plus">+</span></p>
+                            <div class="box_ctn box_ctn_first">
+                                <div id="nxHomeGrid" class ="nx-ctts-right-home-grid">
+                                </div>
+                            </div>
+                        </div> <!--call1 end-->
+
+                        <div class="callback_box call2">
+                            <p class="callback_title">RE-CONTACT (<span>00</span>) <span class="call_plus">+</span></p>
+                            <div class="box_ctn">
+                                <div id="nxRecontactGrid" class ="nx-ctts-right-home-grid">
+                                </div>
+                            </div>
+                        </div> <!--call2 end-->
+                        <div class="callback_box call3">
+                            <p class="callback_title">CAMPAIGN (<span>00</span>) <span class="call_plus">+</span></p>
+                            <div class="box_ctn">
+                                <div id="nxCampGrid" class ="nx-ctts-right-home-grid">
+                                </div>
+                            </div>
+                        </div> <!--call3 end-->
+
+                        <!-- 20180424 Anna -->
+                        <div class="callback_box call4">
+                            <p class="callback_title">CRM-LIST (<span>00</span>) <span class="call_plus">+</span></p>
+                            <div class="box_ctn">
+                                <div id="nxCRMGrid" class ="nx-ctts-right-home-grid">
+                                </div>
+                            </div>
+                        </div> <!--call4 end-->
+                    </div>
+                </div> <!--container end-->
+            </div> <!--call_mc_left end-->
+        </div>
+    </section>
+
+
+</div>
+
+<script type="text/javascript">
+    //기본
+    $(function(){
+            $(".h_lnfo li:eq(3)").css({"margin":"0px"});
+            $(".h_icon li:eq(2)").css({"border":"none"});
+            $(".inbound").css({"border":"none"});
+            
+            //logon_state1??.log_time ?�간 ?�데?�트
+            function realTime(){
+                var now = new Date();
+                var hours = now.getHours();
+                var minutes = now.getMinutes();
+                var seconds = now.getSeconds();
+                var time = hours + ":" + minutes + ":" + seconds;
+                $(".log_time").html(time);
+            }
+            $(function(){
+                var timer = setInterval(function(){realTime();},1000);
+                realTime();
+            });
+            
+        });
+    
+    //?�정
+        $(function(){
+            //call_type(hold, retry, trans, conf, cons) 5가지 ?�?�에 마우?�올?�을 ??
+            $(".mc_status_bottom li:eq(0)").click(function(){
+                $(this).children().children("img").attr("src","../Styles/img/hold_30_hover_btn.png");
+                $(".mc_status_bottom li").removeClass("selected3");
+                $(this).addClass("selected3");
+                return false;
+            });
+            $(".mc_status_bottom li:eq(1)").click(function(){
+                $(this).children().children("img").attr("src","../Styles/img/retry_30_hover_btn.png");
+                $(".mc_status_bottom li").removeClass("selected3");
+                $(this).addClass("selected3");
+            });
+            $(".mc_status_bottom li:eq(2)").click(function(){
+                $(this).children().children("img").attr("src","../Styles/img/consult_30_hover_btn.png");
+                $(".mc_status_bottom li").removeClass("selected3");
+                $(this).addClass("selected3");
+            });
+            $(".mc_status_bottom li:eq(3)").click(function(){
+                $(this).children().children("img").attr("src","../Styles/img/trans_30_hover_btn.png");
+                $(".mc_status_bottom li").removeClass("selected3");
+                $(this).addClass("selected3");
+            });
+            $(".mc_status_bottom li:eq(4)").click(function(){
+                $(this).children().children("img").attr("src","../Styles/img/confer_30_hover_btn.png");
+                $(".mc_status_bottom li").removeClass("selected3");
+                $(this).addClass("selected3");
+            });
+
+            /*
+            $(".mc_status_bottom li").click(function(){
+                $(".mc_status_bottom li").removeClass("selected3");
+                $(this).addClass("selected3");
+            });
+            */
+
+            //keypad ?�기�?기능
+            $(".keypad").css("display","none");
+            $(".keypad_btn img").click(function(){
+                if($(".keypad").css("display")=="none"){
+                    $(".keypad").css("display","block");
+                    $("#navbar").css("height","1002px");
+                    $(".call_mc_left .container").css("height","892px");
+                    $(".call_ctn .mc_info").css("height","905px");
+                    $(".mc_contact .container").css("height","897px");
+                    $(".mc_contact .kms_pop").css("top","-871px");
+                }
+                else{
+                    $(".keypad").css("display","none");
+                    $("#navbar").css("height","843px");
+                    $(".call_mc_left .container").css("height","733px");
+                    $(".call_ctn .mc_info").css("height","746px");
+                    $(".mc_contact .container").css("height","738px");
+                    $(".mc_contact .kms_pop").css("top","-712px");
+                }
+                return false;
+            });
+            
+            //keypad ?��?지 ?��?
+            $(".keypad_btn img").click(function(){
+                if($(".keypad").css("display")=="block"){
+                    $(".keypad_btn img").attr("src","./../Styles/img/keypad_close_btn.png");
+                    return false;
+                }
+                else{
+                    $(".keypad_btn img").attr("src","./../Styles/img/keypad_btn.png");
+                }              
+            });
+            
+            //keypad ?�로?? 마우?�올?�을 ??
+            $(".col_num").children().next().css({"borderLeft":"1px solid #bfbfbf"});
+            $(".col_num li").mouseenter(function(){
+                $(this).css("backgroundColor","#ddd");
+            }).mouseleave(function(){
+                $(this).css("backgroundColor","#fff");
+            });
+            
+            //keypad click ?�벤??
+            var oldnum="";
+            $(".keypad li").click(function(){
+               oldnum+=($(this).val());
+               $(".keypad_num").html(oldnum);
+            });
+            
+            //outbound 버튼??마우?�올?�을 ??
+            $(".mc_status_box button").mouseenter(function(){
+                $(this).css({"backgroundColor":"#139834"});
+            }).mouseleave(function(){
+                $(this).css({"backgroundColor":"#42cb70"});
+            });
+
+
+            //reject 버튼??마우?�올?�을 ??
+            $(".make_call").children().css("backgroundColor","#42cb70");
+            $(".make_call").children().next().css("backgroundColor","#d85d55");
+            $(".make_call").children().next().mouseenter(function(){
+                $(this).css({"backgroundColor":"#ad1e14"});
+            }).mouseleave(function(){
+                $(this).css({"backgroundColor":"#d85d55"});
+            });
+
+                //?�상??
+            $(".outbound_btn").css("display","block");
+            $(".make_call").css("display","none");
+
+			
+            
+            //.customer_detail ?�백  20180412 jesse
+            // $(".customer_detail li:eq(1)").css("marginLeft","4%");
+            // $(".customer_detail li:eq(4)").css("marginLeft","4%");
+            // $(".customer_detail li:eq(6)").css("marginLeft","4%");
+            
+            //.detail2 select,priorty ?�백
+            $(".detail2_type .types li:eq(1)").css({"marginLeft":"1%","marginRight":"1%"});
+            $(".detail2_result li:eq(4)").css({"border":"none"});
+            $(".detail2_result li:eq(5)").css({"border":"none"});
+            $(".priorty li:eq(1)").css({"padding":"0","margin":"0"});
+            
+            //.detail2_result 마우?�올?�을 ??
+            $(".detail2_result").children("li:not(:eq(0))").mouseenter(function(){
+                $(this).css({"backgroundColor":"#4a4a4a","color":"#fff"});
+            }).mouseleave(function(){
+                $(this).css({"backgroundColor":"#fff","color":"#808080"});
+            });
+            
+            //kms_pop ?�기�?기능
+            $(".mc_contact span img").css({"cursor":"pointer","position":"absolute","top":"0","right":"0"});
+            
+            $(".kms_pop").css("display","none");
+            $(".mc_contact span img").click(function(){
+                if($(".kms_pop").css("display")=="none"){
+                    $(".kms_pop").css("display","block");
+                }
+                else{
+                    $(".kms_pop").css("display","none");
+                }
+                return false;
+            });
+            
+            //kms ?��?지 ?��?
+            $(".mc_contact span img").click(function(){
+                if($(".kms_pop").css("display")=="block"){
+                    $(".mc_contact span img").attr("src","./../Styles/img/kms_close.png");
+                    return false;
+                }
+                else{
+                    $(".mc_contact span img").attr("src","./../Styles/img/menu_kms_btn.png");
+                }              
+            });
+            
+            //.kms_page_num li 마우?�올?�을 ??
+            $(".kms_page_num li:eq(0)").css("backgroundColor","#e8ecef");
+            $(".kms_page_num li:not(:eq(0))").mouseenter(function(){
+                $(this).css({"backgroundColor":"#e8ecef"});
+            }).mouseleave(function(){
+                $(this).css({"backgroundColor":"#fff"});
+            });
+        });
+    
+    //?�기?��?????��?�고 kendo ?�입
+        $(function(){
+            //.callback_box ?�코?�언기능
+            $(".box_ctn").css("display","none");
+            $(".box_ctn.box_ctn_first").css("display","block");
+            $(".call1 .callback_title").addClass("selected");
+            $(".callback_title:first").children().next(".call_plus").css("display","none");
+            
+            $(".callback_title").click(function(){
+                $(".box_ctn").slideUp("slow");
+				$(this).next(".box_ctn").slideToggle("slow");
+				
+				$(".callback_title").children().next(".call_plus").css("display","block");
+				$(this).children().next(".call_plus").css("display","none");
+				$(".callback_title").removeClass("selected");
+                $(this).addClass("selected");
+                return false;
+                
+                // if($(this).next(".box_ctn").css("display")=="none"){
+                //     $(".box_ctn").slideUp("slow");
+                //     $(this).next(".box_ctn").slideDown();
+                //     $(".callback_title").children().next(".call_plus").css("display","block");
+                //     $(this).children().next(".call_plus").css("display","none");
+                //     $(".callback_title").removeClass("selected");
+                //     $(this).addClass("selected");
+                // }
+                // return false;
+            });
+            
+            //tab
+            $(".tab_title li:eq(3)").css("border","none");
+            $(".panel:not(:first)").hide();
+            $(".tab_title>li:eq(0)>a").addClass("selected");
+            $(".tab_title>li>a").click(function(){
+                $(".panel").hide();
+                $($(this).attr("href")).show();
+                $(".tab_title>li>a").removeClass("selected");
+                $(this).addClass("selected");
+                return false;
+            });
+        });
+    
+    
+    </script>
+
+

@@ -1,0 +1,24 @@
+<ul id="nx-sidebar">
+   <li><a class ="list" data-bind ="click: nxInteractionHome" ><i class="navi-icon"></i> </a></li>
+   <li><a class ="list" data-bind ="click: nxInteractionCall" ><i class="navi-icon call"></i></a></li>
+   <li id="NX-MULTICHANNEL" ><a class ="list" data-bind ="click: nxInteractionMail" ><i class="navi-icon mail"></i></a></li>
+   <li id="NX-MULTICHANNEL" ><a class ="list" data-bind ="click: nxInteractionChat" ><i class="navi-icon chat"></i></a></li>
+   <li><a class ="list" data-bind ="click: nxInteractionHistory" ><i class="navi-icon history"></i></a></li>
+
+
+
+</ul>
+
+<script type="text/javascript">
+    $(function(){
+    //sidebar 클릭시 색상 변경 .nx-sidebar li a.selected
+        $(".nx-sidebar li:eq(0) a").addClass("selected");
+		$(".nx-sidebar li a").click(function(){
+            if($(".nx-sidebar li a").hasClass("selected")){
+                $(".nx-sidebar li a").removeClass("selected");
+                $(this).addClass("selected");
+            }
+            else{}
+        });
+    });
+</script>

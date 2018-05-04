@@ -1,0 +1,12 @@
+ 
+ 
+
+<div id="nx-contents-interactionmail">
+  
+     <div class="row">
+        <div id="nx-contents-interactionmail-left" class="col-sm-3 nx-contents-interactionmail-left" data-bind="html: nxContentsLeft"></div>
+        <div id="nx-contents-interactionmail-main" class="col-sm-6 nx-contents-interactionmail-main" data-bind="html: nxContentsMain"></div>
+        <div id="nx-contents-interactionmail-right" class="col-sm-3 nx-contents-interactionmail-right" data-bind="html: nxContentsRight"></div>
+     </div>
+
+</div>

@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <title>EKR C.C.C</title>
+
+   <link rel="Stylesheet" href="../Styles/css/intro.css" />
+
+   <script data-main="intro.js" src="../Libpack/require.js"></script>
+</head>
+
+<body>
+   <div id="wrapper">
+      <!--header-->
+      <header id="header">
+         <div class="container">
+            <div class="h_left">
+            <h1 class="hidden">header logo</h1>
+               <p class="h_logo">
+                    <a class="navbar-brand nx-brand" href="#">iPECS Cloud CC</a>
+               </p>
+            </div>
+
+            <div class="logon_info">
+            <h3 class="hidden">로그온상태</h3>
+
+               <div class="logon_state1">
+                  <p class="logon_name" id="nx-user-id" data-bind="text: nxUserID"></p>
+                  <p class="logon_dn" id="nx-user-dn" data-bind="text: nxUserDN"></p>
+                  <!-- <p class="logon_time" id="nx-user-time" data-bind="text: nxUserTime"></p> -->
+               </div>
+
+               <button data-bind="click: nxDoLogout">LOGOUT</button>
+
+            </div>
+
+         </div> <!--container end-->
+      </header> <!--header end-->
+
+      <!--main login_form-->
+      <section id="main">
+         <div class="logon_ctn">
+         <h3 class="hidden">Logon_console 내용</h3>
+            <div id="NX-CONTAINER" class="container" style="visibility: hidden;">
+               <ul class="type_top">
+                  <li id="NX-INTERACTION">
+                     <a href="../_INTERACTION/Containers/interaction.html">
+                        <span class="type_title">INTERACTION</span>
+                        <img src="../Styles/img/interaction_dis_btn.png" alt="interaction"/>
+                        <span>Built-in softphone that support Omni-Channel within the INTERACTION menu</span>
+                     </a>
+                  </li>
+                  <li id="NX-REPORT">
+                     <a href="../_REPORT/Containers/report.html">
+                        <span class="type_title">REPORT</span>
+                        <img src="../Styles/img/report_dis_btn.png" alt="report"/>
+                        <span>All the reports of the center can be accessed within the REPORT menu</span>
+                     </a>
+                  </li>
+                  <li id="NX-MONITORING">
+                     <a href="../_MONITOR/Containers/monitor.html">
+                        <span class="type_title">MONITORING</span>
+                        <img src="../Styles/img/monitoring_dis_btn.png" alt="monitoring"/>
+                        <span>Real time reporting that support for multiple refresh rates based on different types of statistics within the MONITORING menu</span>
+                     </a>
+                  </li>
+                  <li id="NX-MANAGEMENT">
+                     <a href="../_MANAGEMENT/Containers/manage.html">
+                        <span class="type_title">MANAGEMENT</span>
+                        <img src="../Styles/img/management_dis_btn.png" alt="management"/>
+                        <span>Resource managing tools of the center within the MANAGEMENT menu</span>
+                     </a>
+                  </li>
+                  
+               </ul> <!--type_top end-->
+               <ul class="type_bottom">
+                  <li id="NX-SCENARIO">
+                      <a href="../_SCENARIO/Containers/scenario.html">
+                         <span class="type_title">SCENARIO</span>
+                         <img src="../Styles/img/scenario_dis_btn.png" alt="scenario"/>
+                         <span>Call flow customizing tools that providing best service within the SCENARIO menu</span>
+                      </a>
+                   </li>
+
+                  <li id="NX-CAMPAIGN">
+                     <a href="../_CAMPAIGN/Containers/campaign.html">
+                        <span class="type_title">CAMPAIGN</span>
+                        <img src="../Styles/img/setting_dis_btn.png" alt="campaign"/>
+                        <span>Outbound system tools that have ability to schedule, manage and monitor campaign within the CAMPAIGN menu</span>
+                     </a>
+                  </li>
+                  <li id="NX-KMS">
+                     <a href="../_KMS/Containers/kms.html">
+                        <span class="type_title">KMS/AGENT SCRIPT</span>
+                        <img src="../Styles/img/kms_dis_btn.png" alt="kms"/>
+                        <span>Agents tools to support efficient replies like knowledge management, push URL, canned response within the KMS/Agent menu</span>
+                     </a>
+                  </li>
+                  <li id="NX-WALLBOARD">
+                     <a href="../_WALLBOARD/Containers/wallboard.html">
+                        <span class="type_title">WALLBOARD</span>
+                        <img src="../Styles/img/wallboard_dis_btn.png" alt="wallboard"/>
+                        <span>Real time reporting tools optimized for wallboard within WALLBOARD menu</span>
+                     </a>
+                  </li>
+
+                  <!-- <li id="NX-SETTING">
+                     <a href="../_LYNN/lynn/cairo.html">
+                        <span class="type_title">SETTING</span>
+                        <img src="../Styles/img/setting_btn.png" alt="setting"/>
+                        <span>It is a counseling console that can cope effectively with multi-channel</span>
+                     </a>
+                  </li> -->
+                  <li id="NX-MASTER">
+                     <a href="../_MASTER/Containers/master.html">
+                        <span class="type_title">MASTER</span>
+                        <img src="../Styles/img/setting_btn.png" alt="master"/>
+                        <span>It is a counseling console that can cope effectively with multi-channel</span>
+                     </a>
+                  </li>
+
+
+
+               </ul> <!--type_bottom end-->
+            </div>
+         </div> <!--logon_ctn end-->
+      </section> <!--main end-->
+
+      <!--footer copyright-->
+      <footer id="footer">
+      </footer> <!--footer end-->
+   </div> <!--wrapper end-->
+</body>
+
+</html>

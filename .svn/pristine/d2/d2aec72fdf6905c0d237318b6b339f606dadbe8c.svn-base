@@ -1,0 +1,66 @@
+﻿********************************************************************
+PYRAMID-EKRCCC INTERACTION  v0.9.0.03 : 2018.05.04
+이슈번호 : #16130
+수정일 : 2018.05.04
+수정자 : Sam
+키워드 : Sam #16130
+수정원인 : EKR CRM 연동 개발 요청
+수정Source :
+-_INTERACTION\Contents\sub\viewLeftCall.js
+-_INTERACTION\Library\ContactsLib.js
+********************************************************************
+PYRAMID-EKRCCC INTERACTION  v0.9.0.02 : 2018.04.27
+이슈번호 : 
+수정일 : 2018.04.27
+수정자 : Eric
+키워드 : 
+수정원인 : EKR Lab 소스 머지 
+수정Source : 
+	_INTERACTION\Components\models\model.kendo.grid.js < 
+	_INTERACTION\Components\kendo.grid.js < 
+	_INTERACTION\Containers\interaction.js <
+	_INTERACTION\Contents\sub\models\modelKmsGrid.js <
+	_INTERACTION\Contents\sub\models\modelOutboundGrid.js <
+	_INTERACTION\Contents\sub\viewLeftCall.html <
+
+
+	_INTERACTION\Contents\sub\viewLeftChat.html < 
+	_INTERACTION\Contents\sub\viewLeftChat.js < 
+	_INTERACTION\Contents\sub\viewMainCall.html<
+	_INTERACTION\Contents\sub\viewMainCall.js < 
+	_INTERACTION\Contents\sub\viewMainChat.html <
+	_INTERACTION\Contents\sub\viewMainChat.js <
+	_INTERACTION\Contents\sub\viewMainHistory.html < 
+	_INTERACTION\Contents\sub\viewMainHistory.js < 
+	_INTERACTION\Contents\sub\viewMainHome.html 
+	_INTERACTION\Contents\sub\viewMainMail.js
+	_INTERACTION\Contents\sub\viewRight.html
+	_INTERACTION\Contents\sub\viewRight.js
+	_INTERACTION\Contents\interactionMail.js
+	_INTERACTION\Defines\language\field.en.js
+	_INTERACTION\Defines\query.define.js
+	_INTERACTION\Library\interaction.nxproxy.js	
+	_INTERACTION\interaction.define.js
+
+
+
+********************************************************************
+PYRAMID-EKRCCC INTERACTION  v0.9.0.01 : 2018.04.23
+이슈번호 : #22917
+수정일 : 2018.04.23
+수정자 : Jesse
+키워드 : 20180423 Jesse #22917
+수정원인 : 상담원에 대한 시간 형태가 hh:mm:ss 가 좋아보입니다.
+수정Source :  _INTERACTION\Containers\sub\header.js
+수정내용 : 시간 출력 포맷 변경(한자리 시, 분, 초에 대한 처리 추가)
+- h:m:s -> hh:mm:ss
+********************************************************************
+PYRAMID-EKRCCC INTERACTION  v0.9.0.00 : 2018.04.23
+이슈번호 : #22970
+수정일 : 2018.04.23
+수정자 : Jesse
+키워드 : 20180423 Jesse #22970
+수정원인 : 상태_후처리 상태의 용어가 After Call 로만 표기되어 있음.
+수정Source : _INTERACTION\Defines\language\field.en.js , _INTERACTION\Containers\sub\header.js
+수정내용 : 관련 용어 수정
+- AFTER CALL -> AFTER CALL WORK

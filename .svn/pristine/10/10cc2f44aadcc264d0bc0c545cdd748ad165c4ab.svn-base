@@ -1,0 +1,137 @@
+/***************************************
+ * file : /Contents/containerCustomer.html
+ * tree
+ **************************************/
+
+.nx-containerCustomer {
+   height: 100%;
+}
+
+
+/**
+ * grid
+ */
+/*
+.k-grid-content {
+   position: absolute;
+   top: 62px;
+   bottom: 0px;
+}
+*/
+
+.nxContainerCustomerCenter {
+   border-color: #fff;
+   position: absolute;
+   bottom: 0px;
+   top: 0px;
+   left: 0px;
+   right: 0px;
+   border: 0px;
+   margin-top: 35px;
+   height: 90.5%;
+}
+
+
+/******* toolbar ********/
+.nxContainerCustomerCenter .k-grid-toolbar {
+   padding: .6em 1.3em .6em .4em;
+}
+
+.nxContainerCustomerCenter .nx-ccc-title {
+   padding-left: 1.5em;
+   padding-right: 0.5em;
+   font-weight: 600;
+}
+
+.nxContainerCustomerCenter .nx-ccc-input {
+   display: inline-block;
+   padding-bottom: 0px;
+}
+
+.nxContainerCustomerCenter .nx-ccc-input .nx-search-button {
+   width: 150px;
+   font-weight: 600;
+   float: right;
+   margin: 0 20px;
+}
+/******* toolbar ********/
+
+.nxContainerCustomerCenter .k-grouping-header {
+   background-color: indianred;
+}
+
+.nxContainerCustomerCenter .k-header {
+   background-color: #fff;
+   background-image: none;
+}
+
+.nxContainerCustomerCenter .k-grid-header {
+   background-color: #5a5d63;
+   background-image: none;
+}
+
+.nxContainerCustomerCenter .k-grid-header th {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+}
+
+.nxContainerCustomerCenter .k-grid-content-locked {
+   border-color: #aaa;
+   border-right-width: 2px;
+}
+
+.nxContainerCustomerCenter .k-grid-content {
+   position: absolute;
+   top: 102px;
+   bottom: 0px;
+}
+
+.nxContainerCustomerCenter .k-pager-wrap {
+   background-color: #5a5d63;
+   background-image: none;
+   color: #fff;
+   position: absolute;
+   width: 100%;
+   height: 25px;
+   bottom: 0px;
+   right: 0px;
+   left: 0px;
+}
+
+.nxContainerCustomerCenter a.k-link:link {
+   color: #fff;
+}
+
+.nxContainerCustomerCenter tbody .k-button {
+   min-width: 20px !important;
+   padding-left: 10px;
+   padding-right: 0px;
+}
+
+.nxContainerCustomerCenter tbody .k-state-selected {
+   background-color: #fff;
+   color: #2e2e2e;
+   font-weight: 600;
+}
+
+.nxContainerCustomerCenter tr:hover {
+   background-color: #fff;
+}
+
+.nxContainerCustomerCenter td.k-state-selected:hover, .nxContainerCustomerCenter tr.k-state-selected:hover {
+   background-color: #fff;
+}
+
+/* override absolute positioning styles of the validator messages */
+.nxContainerCustomerCenter .k-tooltip {
+   position: static;
+   margin: 7px 0px !important;
+   border: 0px;
+   padding: 5px 5px;
+}
+
+/* hide validator tooltip callouts */
+.nxContainerCustomerCenter .k-tooltip .k-callout {
+   display: none;
+}

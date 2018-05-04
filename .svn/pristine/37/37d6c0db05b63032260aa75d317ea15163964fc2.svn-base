@@ -1,0 +1,21 @@
+<div id="nx-contents-board">
+
+   <table class="nx-contents-board-table">
+      <tbody>
+         <tr class="nx-contents-board-top-row">
+            <td class="nx-contents-board-top-col">
+               <div id="nx-contents-board-top" class="nx-contents-board-top" data-bind="html: nxViewTop"></div>
+            </td>
+            <td rowspan="2" class="nx-contents-board-right-col">
+               <div id="nx-contents-board-right" class="nx-contents-board-right" data-bind="html: nxViewRight"></div>
+            </td>
+         </tr>
+         <tr class="nx-contents-board-bottom-row">
+            <td class="nx-contents-board-bottom-col">
+               <div id="nx-contents-board-bottom" class="nx-contents-board-bottom" data-bind="html: nxViewBottom"></div>
+            </td>
+         </tr>
+      </tbody>
+   </table>
+
+</div>

@@ -1,0 +1,12 @@
+<div id="nx-contents-interactionhistory">
+
+        <!-- <div class="row">
+            <div id="nx-contents-interactionhome-top" class="col-sm-12 nx-contents-interactionhome-top" data-bind="html: nxContentsTop"></div>
+         </div> -->
+      
+         <div class="row">
+            <div id="nx-contents-interactionhistory-main" class="nx-contents-interactionhistory-main" data-bind="html: nxContentsMain"></div>
+            <!-- <div id="nx-contents-interactionhome-main" class="col-sm-12 nx-contents-interactionhome-main" data-bind="html: nxContentsMain"></div> -->
+         </div>
+    
+    </div>

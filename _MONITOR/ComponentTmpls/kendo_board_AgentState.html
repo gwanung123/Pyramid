@@ -1,0 +1,45 @@
+<div id="nx-monitor-agent-state" class="nxcss-agent-state-font">
+   <h5 class="nxcss-agent-state-title">AGENT STATE</h5>
+   <table class="nxcss-agent-state-table">
+      <tbody data-template="agent-state-template" data-bind="source: agentState"></tbody>
+   </table>
+</div>
+
+<script id="agent-state-template" type="text/x-kendo-template">
+   <tr class="nxcss-agent-state-row">
+      <td class="nxcss-agent-state-key" data-bind="text: key"></td>
+      <td class="nxcss-agent-state-val" data-bind="text: val"></td>
+   </tr>
+</script>
+
+<style>
+.nxcss-agent-state-font {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.nxcss-agent-state-title {
+   color: #9a9a9a;
+   border-bottom-style: solid;
+   margin-bottom: 15px;
+}
+
+.nxcss-agent-state-table {
+   width: 100%;
+}
+
+.nxcss-agent-state-row {
+}
+
+.nxcss-agent-state-key {
+   color: #666;
+   font-size: 14px;
+   width: 50%;
+}
+
+.nxcss-agent-state-val {
+   color: #2e2e2e;
+   font-size: 14px;
+   font-weight: bold;
+   width: 50%;
+}
+</style>
